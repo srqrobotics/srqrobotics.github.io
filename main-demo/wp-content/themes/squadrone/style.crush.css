@@ -1,0 +1,59 @@
+/* 
+Theme Name: Squadrone
+Theme URI: http://squadrone.bold-themes.com
+Description: Responsive theme.
+Version: 1.0.9
+Author: BoldThemes
+Author URI: http://bold-themes.com
+Tags: one-column, right-sidebar, custom-menu, featured-images, sticky-post, theme-options, threaded-comments, translation-ready
+Text Domain: squadrone
+License: GNU General Public License version 3.0 & Envato Regular/Extended License
+License URI:  http://www.gnu.org/licenses/gpl-3.0.html & http://themeforest.net/licenses
+
+All PHP code is released under the GNU General Public Licence version 3.0
+All HTML/CSS/JAVASCRIPT code is released under Envato's Regular/Extended License
+
+[Table of contents]
+
+1. Base
+2. Typography
+3. Bootstrap grid
+4. Bold themes grid 
+5. Template
+6. Header
+7. Footer
+8. Post
+9. Widgets
+10. Elements
+11. Color schemes
+12. Woocommerce
+13. Cost calculator
+14. Typography etc responsive
+15. Woocommerce screens
+16. Fixes
+17. Progress Bar
+18. IE
+19. Gutenberg
+
+
+*/ 
+
+@import url("css/base.css");
+@import url("css/typography.css");
+@import url("css/grid.css");
+@import url("css/template.css");
+@import url("css/header.css");
+@import url("css/footer.css");
+@import url("css/post.css");
+@import url("css/comments.css");
+@import url("css/widgets.css");
+@import url("css/elements.css");
+@import url("css/colors.css");
+@import url("css/woocommerce.css");
+@import url("css/costcalc.css");
+@import url("css/screens.css");
+@import url("css/woocommerce-screens.css");
+@import url("css/_fixes.css");
+@import url("css/advanced-progress-bar.css");
+@import url("css/ie.css");
+@import url("css/gutenberg.css");

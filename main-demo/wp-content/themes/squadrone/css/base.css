@@ -1,0 +1,199 @@
+/* Fonts */ 
+
+/* Template fonts, edit in config.php  */
+
+@set bodyFont Arial; /* Base font */             
+@set menuFont Arial; /* Base menu font */ 
+
+@set headingFont Arial; /* Headline fond */
+@set headingSuperTitleFont Arial; /* Headline supertitle font */
+@set headingSubTitleFont Arial; /* Headline subtitle font */
+
+/* Variables  */
+
+@set bodyFontSize 15; // Base font size
+@set bodyLineHeight 1.8;
+
+@set lightFontColor #444444; // Base font color
+@set lightBgColor #fff; // Base bg color
+@set lightBorderColor rgba(0,0,0,0.4); // Base border color
+@set lightBgSubColor rgba(0,0,0,0.07);  // Sub bg color
+
+@set darkFontColor #fff; // Base font color
+@set darkBgColor #191919; // Base bg color
+@set darkBorderColor rgba(255,255,255,0.5); // Base border color
+@set darkBgSubColor rgba(255,255,255, 0.3);  // Sub bg color
+
+@set accentColor #CCA876; // Main color
+@set accentColorDark l-adjust($(accentColor) -15);// Dark main color
+@set accentColorVeryDark l-adjust($(accentColor) -35);// Darker main color
+@set accentColorVeryVeryDark l-adjust($(accentColor) -42);// Very darker main color
+@set accentColorLight a-adjust($(accentColor) -30);// Light main color
+
+@set alternateColor #FF7F00; // Secondary color 
+@set alternateColorDark l-adjust($(alternateColor) -15);// Dark secondary color
+@set alternateColorVeryDark l-adjust($(alternateColor) -25);// Darker secondary color
+@set alternateColorLight a-adjust($(alternateColor) -40);// Light secondary color
+
+@set baseTemplateWidth 1200; // Base gutter width
+
+@set sidebarWidth 25; // Sidebar width (%)
+@set sidebarPadding 20; // Padding between sidebar and sontent
+@set pagePadding 20; // Left and right page padding for boxed content
+
+@set gridSpacing 5; // Default spacing in grid gallery
+@set logoHeight 80; // Defines logo height and menu line height
+@set belowLogoMenuHeight 50; Defines menu height whwn below menu
+
+@set menuVerticalPadding 20; // Top and bottom padding of the whole horizontal menu (px)
+@set menuPadding 40; // Padding between horizontal menu elements (px)
+@set verticalMenuWidth 320; // Width of the vertical menu (px)
+@set dropdownWidth 220; // dropdown width (px)
+@set menuFontSize 13; // Base font size
+
+@set extrasmallIconSize 21; // Small icon size
+@set smallIconSize 28; // Small icon size
+@set mediumIconSize 40; // Small icon size
+@set bigIconSize 52; // Small icon size
+@set largeIconSize 74; // Small icon size
+
+@set hardBorderRadius 50px; // Soft border radius
+@set softBorderRadius 3px; // Soft border radius
+
+/* Mixins */
+
+/* @ include btMaxLines(lines, line-height); */
+
+@mixin btMaxLines {
+   overflow: hidden;
+   text-overflow: ellipsis;
+   display: -webkit-box;
+   -webkit-box-orient: vertical;
+   -webkit-line-clamp: #(0); 							/* number of lines to show */
+   line-height: #(1 $(bodyLineHeight))em;        			/* fallback */
+   max-height: math(#(0)*#(1 $(bodyLineHeight)))em;     	/* fallback */
+}
+
+/* @fragment btClear; */
+
+@fragment btClear {
+	&:after {
+		content: " ";
+		display: table;
+		width: 100%;
+		clear: both;		
+	}
+}
+
+@fragment btGutterWidth {
+	max-width: math($(baseTemplateWidth) + 2*$(pagePadding), px);
+}
+
+
+/* Aliases */
+
+@selector darkSkinSelector :any(.btDarkSkin, .btLightSkin .btDarkSkin, .btDarkSkin.btLightSkin .btDarkSkin);
+@selector lightSkinSelector :any(.btLightSkin, .btDarkSkin .btLightSkin, .btLightSkin .btDarkSkin .btLightSkin);
+/* Cost calculator specific */
+@selector accentSkinSelector :any(.bt_bb_color_scheme_5, .bt_bb_color_scheme_6);
+
+@selector hTagSelector :any(h1,h2,h3,h4,h5,h6,h7,h8);
+
+@selector leftAlignSelector .bt_bb_align_right .bt_bb_align_left&, .bt_bb_align_center .bt_bb_align_left&, .bt_bb_align_right .bt_bb_align_left &, .bt_bb_align_center .bt_bb_align_left &, .bt_bb_align_left&, .bt_bb_align_left &;
+@selector rightAlignSelector .bt_bb_align_left .bt_bb_align_right&, .bt_bb_align_center .bt_bb_align_right&, .bt_bb_align_left .bt_bb_align_right &, .bt_bb_align_center .bt_bb_align_right &, .bt_bb_align_right&, .bt_bb_align_right &;
+@selector centerAlignSelector .bt_bb_align_left .bt_bb_align_center&, .bt_bb_align_right .bt_bb_align_center&, .bt_bb_align_left .bt_bb_align_center &, .bt_bb_align_right .bt_bb_align_center &, .bt_bb_align_center&, .bt_bb_align_center &;
+
+/* Reset */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary,
+audio,
+canvas,
+video {
+    display: block; 
+}
+
+audio,
+canvas,
+video {
+    display: inline-block;
+}
+
+*:focus, * {
+    outline: none;
+    outline: 0;
+}
+
+.touch * {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-focus-ring-color:  rgba(0, 0, 0, 0);
+}
+
+button::-moz-focus-inner {
+    border: 0;
+}
+
+audio:not([controls]) {
+    display: none;
+    height: 0;
+}
+
+html,body {
+	margin:0;
+	padding:0;
+}
+
+*,
+*:after,
+*:before {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    background-repeat: no-repeat;
+}
+
+/* FloatClears */
+.btClear
+{
+    @fragment btClear;
+}
+
+/* Text meant only for screen readers. */
+
+.screen-reader-text {
+	clip: rect(1px, 1px, 1px, 1px);
+	position: absolute !important;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+}
+
+.screen-reader-text:focus {
+	background-color: #f1f1f1;
+	border-radius: 3px;
+	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+	clip: auto !important;
+	color: #21759b;
+	display: block;
+	font-size: 14px;
+	font-size: 0.875rem;
+	font-weight: bold;
+	height: auto;
+	left: 5px;
+	line-height: normal;
+	padding: 15px 23px 14px;
+	text-decoration: none;
+	top: 5px;
+	width: auto;
+	z-index: 100000; /* Above WP toolbar. */
+}
+

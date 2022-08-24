@@ -1,0 +1,116 @@
+@media (max-width: 1199px) {
+	.widget_shopping_cart {
+		.buttons .button {
+			width: 100%;
+		}
+		.buttons .button.checkout {
+			margin-top: 10px;
+		}
+	}
+}
+
+@media (max-width: 992px) {
+	.col2-set .col-1,.col2-set .col-2, .cart-collaterals .cross-sells, .cart-collaterals .cart_totals {
+		float: none;
+		flex-basis: 100%;
+		display: block;
+		width: 100%;
+	}	
+	ul.products {
+		li.product {
+			flex-basis: 50% !important;;
+		}
+	}
+	table.shop_table input[name="update_cart"] {
+		width: auto;
+	}
+}
+
+@media (max-width: 768px) {
+	div.product {
+		display: block;
+		div.summary, div.images {
+			text-align: center;
+			margin-bottom: 2rem;
+			padding: 0;
+		}
+		div.summary .price {
+			text-align: center;
+			margin-bottom: 2rem;			
+		}
+		form.cart {
+			text-align: center;
+			margin-bottom: 2rem;
+		}
+	}
+	table.shop_table {
+		button[name="apply_coupon"] {
+			margin-bottom: 1em;
+		}
+	}
+}
+
+@media (max-width: 620px) {
+	ul.products {
+		li.product {
+			flex-basis: 100% !important;;
+		}
+	}
+	table.shop_table_responsive {
+	   display: block;
+	   tbody th, thead {
+			display: none;
+		}
+		tbody {
+			display: block;
+			width: 100% !important;				
+		}
+		tr, th {
+			display: block;
+			width: 100% !important;
+			border-bottom: 1px solid $(lightFontColor);
+			:darkSkinSelector & {
+				border-bottom: 1px solid $(darkFontColor);
+			}
+			margin-bottom: 2em;
+			padding-bottom: 2em;
+			td {
+				display: block;
+				width: 100% !important;
+				clear: left;
+				text-align: center !important;
+				word-break: break-word;
+				border: none;
+				padding: 0.5em 0 0;
+				&.product-remove {
+					padding: 0.5em;
+					text-align: center;
+				}
+			}
+			td:not(.product-remove):not(.product-thumbnail):not(.actions):before {
+				content: attr(data-title) ": ";
+				font-weight: 700;
+			}
+			td.product-thumbnail img {
+				width: 100%;
+			}
+		}
+	}
+	.cart-collaterals {
+		display: block;
+	}
+	table.shop_table .coupon {
+		display: block;
+		input[name="coupon_code"] {
+			margin-bottom: 1em;
+		}
+		button[name="apply_coupon"] {
+			width: fit-content;
+		}
+	}
+	table.shop_table input[name="update_cart"] {
+		margin-top: 1em;
+		float: none;
+		width: 100%;
+	}
+}

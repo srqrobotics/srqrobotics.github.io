@@ -1,0 +1,236 @@
+/* Comments */
+
+body:not(.woocommerce) .btCommentsBox .form-submit {
+	margin-bottom: 0px;
+}
+
+.btCommentsBox {
+	margin: 2em 0;
+	max-width: 768px;
+	> :hTagSelector, .comment-respond > :hTagSelector {
+		margin: 0 0 1em 0;
+		padding: 0;
+		font-size: 1.4em;
+	}
+	ul.comments, ul.comments li.comment {
+		list-style: none;
+		display: block;
+		padding-left: 0;
+		margin: 0;
+	}
+	ul.comments > li {
+		display: block;
+		margin: 0;
+		:lightSkinSelector & {border-top: 1px solid $(lightBgSubColor);}
+		:darkSkinSelector & {border-top: 1px solid $(darkBgSubColor);}
+	}
+	ul.comments {
+		li > article {
+			padding: 2em 0;
+			position: relative;
+			width: 100%;
+			display: flex;
+			.commentTxt {
+				padding: 0;
+				flex: 1 1 100%;
+			}
+			.commentAvatar {
+				padding: 0 20px 0 0;
+				flex: 0 1 75px;
+				.rtl & {
+					padding: 0 0 0 20px;
+				}
+				img {
+					display: block;
+					width: 100%;
+					height: auto;
+					border-radius: 50%;
+				}
+			}
+		}
+		li.pingback {
+			padding-top: 1em;
+		}
+	}
+	ul.children {
+		li > article {
+			padding: 1em 0;	
+		}
+		font-size: 0.85rem;
+	}
+	input, textarea {
+		transition: all 300ms ease;
+	}
+	.btComment {
+		line-height: 0;	
+		textarea, label {
+			line-height: 1.8;
+		}
+	}
+	.vcard {
+		position: relative;
+		display: flex;
+		flex-flow: row nowrap;
+		justify-content: space-between;
+		align-content: flex-start;
+		align-items: center;
+		padding-bottom: 1em;
+		:hTagSelector.author {
+			margin: 0;
+			padding: 0;
+			line-height: 1.3;
+			flex: 1 1 auto;
+			font-size: 1.2em;
+		}
+		.posted {
+			margin: 0;
+			opacity: 0.8;
+			line-height: 1.15;
+			text-align: right;
+			padding: 0 0 0 10px;
+			font-family: "$(headingFont)";
+			font-size: 0.9em;
+			.rtl & {
+				text-align: left;
+				padding: 0 10px 0 0;
+			}
+		}
+		.woocommerce & .star-rating {
+			margin-left: 0.5em; 
+			strong {
+				display: none;
+			}
+		}
+		.woocommerce.rtl & .star-rating {
+			right: auto;
+			margin-left: 0; 
+			margin-right: 0.5em; 
+		}
+	}
+	.commentTxt {
+		p.edit-link, p.reply {
+			display: inline-block;
+			font-family: "$(headingFont)";
+			font-size: 0.9em;
+			line-height: 1;
+			&:not(:empty){
+				margin: 0 2em 0 0;
+				.rtl & {
+					margin: 0 0 0 2em;
+				}
+			}
+			a {
+				opacity: 0.5;
+				&:hover { opacity: 1; }
+			}
+		}
+	}
+	.comment-form { padding-bottom: 20px; }
+	.comment-navigation  {
+		text-align: right;
+		clear: right;
+		a, span {
+			display: inline-block;
+		}
+		span {
+			margin: 0 5px;
+		}
+	}
+}
+
+.comment-awaiting-moderation {
+	color: $(accentColor);
+}
+
+a#cancel-comment-reply-link {
+	font-weight: 300;
+	display: inline-block;
+	margin: 0 0 0 2em;
+	color: $(accentColor);
+	.rtl & {
+		margin: 0 2em 0 0;
+	}
+	&:hover {
+		color: $(alternateColor);
+	}
+}
+
+.btCommentSubmit {
+	padding: 0.5em 2em;
+	background: none;
+	margin-top: 0.5em;
+	box-shadow: 0 0 0 2px $(lightFontColor) inset;
+	border: none;
+	.btHardRoundedButtons & {border-radius: $(hardBorderRadius);}
+	.btSoftRoundedButtons & {border-radius: $(softBorderRadius);}
+	transition: all 300ms ease;
+	:darkSkinSelector & {
+		box-shadow: 0 0 0 2px $(darkFontColor) inset;
+		color: $(darkFontColor); 
+	}
+	&:before {
+		padding-right: 0.5em;
+	}
+	&:hover {
+		box-shadow: 0 0 0 2em $(lightFontColor) inset;
+		color: $(darkFontColor);
+		:darkSkinSelector & {
+			box-shadow: 0 0 0 2em $(darkFontColor) inset;
+			color: $(lightFontColor); 
+		}
+	}
+	.btnInnerText {
+		font-weight: 600;
+	}
+}
+
+/* Responsive */
+
+@media(max-width: 520px) {
+	.btCommentsBox {
+		.vcard {
+			flex-flow: row wrap;
+			justify-content: flex-start;
+			align-items: flex-start;
+			padding: 0 0 15px;
+			h5.author {
+				flex: 1 1 100%;
+			}
+			.posted {
+				padding: 0;
+				margin-top: 0.7em;
+				text-align: left;
+			}
+		}
+		ul.comments {
+			ul.children {
+				padding: 0;
+				margin: 0;
+				li.comment {
+					padding: 0;
+					border-top: none !important;
+					article {
+						position: relative;
+						:lightSkinSelector & { background-color: rgba(0,0,0,0.055);}
+						:darkSkinSelector & { background-color: rgba(255,255,255,0.055);}
+						.commentAvatar { padding-left: 10px; }
+						&:after {
+							content: '\f148';
+							display: block;
+							position: absolute;
+							top: 0;
+							right: 0;
+							width: 20px;
+							height: 20px;
+							font: normal 16px/20px FontAwesome;
+							vertical-align: middle;
+							text-align: center;
+							:lightSkinSelector & {background-color: $(lightBgColor);}
+							:darkSkinSelector & {background-color: $(darkBgColor);}
+						}
+					}
+				}
+			}
+		}
+	}
+}

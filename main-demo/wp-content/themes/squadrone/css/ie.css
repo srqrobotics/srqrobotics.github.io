@@ -1,0 +1,28 @@
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+/* IE10+ CSS styles go here */
+
+	/* Font weight */
+	body {
+		font-weight: 400;
+	}
+
+	/* Header Visibility */
+	.btMenuInitFinished .mainHeader {
+		visibility: visible;
+	}
+
+	/* Shop widget */
+	.btSidebar .btIconWidget .btIconWidgetContent {
+		display: block !important;
+	}
+
+	/* Portfolio meta */
+	.btArticleSuperMeta dl dd {
+		display: block;
+		opacity: 0.7;
+	}
+
+	.products li.product .btWooShopLoopItemInner .bt_bb_image:after {
+		display: none !important;
+	}
+}

@@ -1,0 +1,329 @@
+/* Skin */
+.btDarkSkin {
+	color: $(darkFontColor);
+	background-color: $(darkBgColor);
+}
+.btLightSkin {
+	color: $(lightFontColor);
+	background-color: $(lightBgColor);
+}
+:any(select, textarea, input, .fancy-select .trigger) {
+	color: inherit;
+	:lightSkinSelector & {
+		border: 1px solid $(lightBorderColor);
+	}
+	:darkSkinSelector & {
+		border: 1px solid $(darkBorderColor);
+	}
+}
+
+/*
+.btHardRoundedButtons any(select, textarea, input, .fancy-select .trigger) { {border-radius: 50%;}
+.btSoftRoundedButtons any(select, textarea, input, .fancy-select .trigger) { {border-radius: 5px;}  */
+
+.btHardRoundedButtons select {}
+.btSoftRoundedButtons {}
+
+/* Form elements */
+
+select, input {
+	font-family: "$(bodyFont)";
+}
+input:not([type='checkbox']):not([type='radio']), button {
+	-webkit-appearance: none;
+}
+input:not([type='checkbox']):not([type='radio']), textarea, select {
+	outline:none;
+	font: inherit;
+	width: 100%;
+	background: transparent;
+	line-height: 1;
+	width: 100%;
+	display: block;
+	padding: 0.8em;
+	background: transparent;
+	color: inherit;
+	.btTextRight & {
+		text-align: right;
+	}
+}
+input:not([type='checkbox']):not([type='radio']), select {
+	height: 3.2em; /* Keeps the same height os selec and input */
+}
+input:not([type='checkbox']):not([type='radio']), a.select2-choice {
+	.btHardRoundedButtons & {border-radius: $(hardBorderRadius); padding-left: 1.5em; padding-right: 1.5em; }
+	.btSoftRoundedButtons & {border-radius: $(softBorderRadius);}
+}
+textarea, select {
+	.btHardRoundedButtons & {border-radius: 20px;}
+	.btSoftRoundedButtons & {border-radius: $(softBorderRadius);}
+}
+input:not([type='checkbox']):not([type='radio']):not([type='submit']), textarea, .fancy-select .trigger {
+	transition: all 500ms ease;
+}
+input:not([type='checkbox']):not([type='radio']):not([type='submit']):focus, textarea:focus, .fancy-select .trigger.open {
+	box-shadow: none;
+	border: 1px solid $(accentColor);
+}
+textarea {
+	resize: vertical;
+	line-height: inherit;
+}
+button {
+	font: inherit;
+	cursor: pointer;
+}
+:darkSkinSelector {
+	input:not([type='checkbox']):not([type='radio']):not([type='submit']):focus, textarea:focus, .fancy-select .trigger.open {
+		border: 1px solid $(darkFontColor);
+	}
+}
+
+/* Iframe resize fix */
+
+/*:any( embed, iframe, img, figure ) {
+	max-width: 100%;
+	height: auto;
+}*/
+
+.bt-video-container {
+	position: relative;
+	padding-bottom: 56.24%;
+	height: 0;
+	overflow: hidden;
+	:any(iframe, object, embed, video) {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
+}
+
+/* Texts */
+img, figure {
+	max-width: 100%;
+	height: auto;
+}
+pre code {
+	display: block;
+}
+pre {
+	overflow: hidden;
+}
+.btContentHolder pre {
+	margin: 0 0 30px;
+	white-space: pre-wrap;
+	padding: 20px;
+	border: 1px solid $(lightBorderColor);
+}
+
+/* Href */
+a {
+	text-decoration: none;
+	transition: color 200ms ease;
+	color: inherit;
+	.btContent & { color: $(accentColor); }
+	&:hover {
+		text-decoration: none;
+		color: $(accentColor);
+		.btContent & { color: inherit; }
+	}
+}
+.btText {
+	a {
+		color: $(accentColor);
+	}
+	a:hover {
+		text-decoration: underline;
+	}
+}
+a img {
+	border: none;
+}
+a, a:active, a:focus {
+	outline: none;
+}
+
+/* Base typography */
+p, dl, address, cite {
+	margin: 0 0 1em;
+}
+b {
+	font-weight: 900;
+}
+ul {
+	margin: 0 0 1em 1em;
+	padding: 0;
+	ul {
+		margin-bottom: 0;
+	}
+	.rtl & {
+		margin: 0 1em 1em 0;
+		ul {
+			margin-bottom: 0;
+		}
+	}
+}
+ol {
+	margin: 0 0 1em 1em;
+	padding: 0;
+	ol {
+		margin-bottom: 0;
+	}
+	.rtl & {
+		margin: 0 1em 1em 0;
+		ol {
+			margin-bottom: 0;
+		}
+	}
+}
+li {
+	margin: 0 0 0 .5em;
+	padding: 0;	
+}
+.btText li {
+	margin-left: 1em;
+}
+dt {
+	font-weight: 600;
+	display: inline;
+	padding-right: 0.75em;
+}
+
+dd {
+	margin: 0 0 1.5em 3.5em;
+	p {
+		display: inline;
+	}
+}
+
+dd:after {
+	content: ' ';
+	display: table;
+	clear: both;
+}
+figcaption {
+	font-size: inherit;
+}
+
+/* Base font */
+html {
+	font-size: $(bodyFontSize)px;
+}
+body {
+	font-family: "$(bodyFont)", Arial, sans-serif;
+	font-weight: 500;
+	line-height: $(bodyLineHeight)em;
+	background-size: cover;
+	background-attachment: fixed;
+}
+small {
+	font-size: math($(bodyFontSize)-2, px);
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+	font-family: "$(headingFont)";
+	@fragment btClear;
+}
+h1, h2, h3, h4, h5, h6 {
+	clear: both;
+	padding: 0 0 0.4em 0;
+	line-height: 1.2;
+	margin: 0;
+	font-weight: 600;
+}
+h1 {
+	font-size: 3em;
+}
+h2 {
+	font-size: 2.5em;
+}	
+h3 {
+	font-size: 2em;
+}
+h4 {
+	font-size: 1.75em;
+}
+h5 {
+	font-size: 1.5em
+}
+h6 {
+	font-size: 1.25em;
+}
+
+/* Blockquotes*/
+blockquote {
+	display: block;
+	font-family: "$(headingFont)";
+	margin: 0 0 0px; 
+	font-size: 1.5em;
+	font-style: italic;
+	font-weight: 400;
+	line-height: 2em;
+	position: relative;
+	padding: 0 0 0 3.5em;
+	.btArticleContent & {
+		font-size: 1.1em;
+	}
+	&:after {
+		content: " ";
+		display: table;
+		width: 100%;
+		clear: both;
+	}
+	.bt_bb_align_center & {
+		padding: 0;
+	}
+	.bt_bb_align_right & {
+		padding: 0 0 3.5em 0;
+	}
+	&:before {
+		content: '\f10d';
+		color: rgba(0,0,0,0.1);
+		font-family: FontAwesome;
+		display: block; 
+		font-size: 3em;
+		line-height: 1;
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		:darkSkinSelector & {color: rgba(255,255,255,0.1);}
+		.bt_bb_align_right & {
+			right: 0;
+			left: auto;
+		}
+	}
+}
+
+cite {
+	opacity: 0.6;
+	font-style: normal;
+}
+
+/* Tables */
+.btContentHolder {
+	table {
+		width: 100%;
+		margin: 0 0 1em 0;
+		border-collapse: collapse;
+		text-align: initial;
+		border: 1px solid $(lightBgSubColor);
+		td, th {
+			padding: 1em;
+			border: 1px solid $(lightBgSubColor);
+		}
+		th {
+			text-align: left;
+		}
+		thead {
+			th {
+				font-weight: 700;
+				background-color: $(accentColor);
+				color: white;
+			}
+		}
+	}
+}
