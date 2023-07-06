@@ -1547,7 +1547,7 @@ footer:before {
 /*----- Home Two CSS -----*/
 /*-- Banner --*/
 .banner-img-two {
-  background-image: url("../img/home-two/banner-bg.jpg");
+  background-image: url("../img/home-one/banner-main.jpg");
 }
 
 .banner-img-two .banner-content {
@@ -2794,9 +2794,10 @@ footer:before {
   background-image: url("../img/home-three/banner-bg.jpg");
 }
 
-.banner-img-three .cmn-btn {
-  color: #ffffff;
+.banner-img-three  .banner-content .cmn-btn {
   background-color: #fa5f0b;
+  color: #ffffff;
+  font-weight: 700;
 }
 
 /*-- End Banner --*/
