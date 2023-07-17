@@ -1,4 +1,5 @@
-
+def get_header(news1_path):
+    header = """
 <!DOCTYPE html>
 <html lang="zxx">
 
@@ -45,7 +46,9 @@
 
     <link rel="icon" type="image/png" href="assets/img/favicon.png">
 </head>
+"""
 
+    body = f"""
 
 <body onload="runOnLoad()">
     <!-- Pre Loader -->
@@ -189,7 +192,7 @@
             <div class="row">
 
                 <div class="col-lg-9">
-                    <iframe id="news-feed" src="./news/2023-07-17/news-8.html" style="height: 100vh; border:2px solid #fa5f0b;"
+                    <iframe id="news-feed" src="{news1_path}" style="height: 100vh; border:2px solid #fa5f0b;"
                         width="100%">
                     </iframe>
                 </div>
@@ -211,81 +214,9 @@
                         </div>
                         <div class="blog-details-post details-head" style="overflow-y: scroll; height: 100vh;">
                             <h3>Recent Posts</h3>
-<ul>
-	<li>
-		<img src='news/2023-07-17/thumbnail.jpg' alt='News Details'>
-		<div class='post-inner'>
-			<span>2023-07-17</span>
-			<a href='#news-feed' onclick="change_iframe('news/2023-07-17/news-8.html')">
-				news-8
-			</a>
-		</div>
-	</li>
-	<li>
-		<img src='news/2023-06-16/thumbnail.jpg' alt='News Details'>
-		<div class='post-inner'>
-			<span>2023-06-16</span>
-			<a href='#news-feed' onclick="change_iframe('news/2023-06-16/news-7.html')">
-				news-7
-			</a>
-		</div>
-	</li>
-	<li>
-		<img src='news/2023-05-10/thumbnail.jpg' alt='News Details'>
-		<div class='post-inner'>
-			<span>2023-05-10</span>
-			<a href='#news-feed' onclick="change_iframe('news/2023-05-10/news-6.html')">
-				news-6
-			</a>
-		</div>
-	</li>
-	<li>
-		<img src='news/2023-04-01/thumbnail.jpg' alt='News Details'>
-		<div class='post-inner'>
-			<span>2023-04-01</span>
-			<a href='#news-feed' onclick="change_iframe('news/2023-04-01/news-5.html')">
-				news-5
-			</a>
-		</div>
-	</li>
-	<li>
-		<img src='news/2023-03-20/thumbnail.jpg' alt='News Details'>
-		<div class='post-inner'>
-			<span>2023-03-20</span>
-			<a href='#news-feed' onclick="change_iframe('news/2023-03-20/news-4.html')">
-				news-4
-			</a>
-		</div>
-	</li>
-	<li>
-		<img src='news/2023-02-15/thumbnail.jpg' alt='News Details'>
-		<div class='post-inner'>
-			<span>2023-02-15</span>
-			<a href='#news-feed' onclick="change_iframe('news/2023-02-15/news-3.html')">
-				news-3
-			</a>
-		</div>
-	</li>
-	<li>
-		<img src='news/2023-02-11/thumbnail.jpg' alt='News Details'>
-		<div class='post-inner'>
-			<span>2023-02-11</span>
-			<a href='#news-feed' onclick="change_iframe('news/2023-02-11/news-2.html')">
-				news-2
-			</a>
-		</div>
-	</li>
-	<li>
-		<img src='news/2023-01-10/thumbnail.jpg' alt='News Details'>
-		<div class='post-inner'>
-			<span>2023-01-10</span>
-			<a href='#news-feed' onclick="change_iframe('news/2023-01-10/news-1.html')">
-				news-1
-			</a>
-		</div>
-	</li>
-</ul>
+"""
 
+    end = """
                         </div>
                     </div>
                 </div>
@@ -553,3 +484,6 @@
 </body>
 
 </html>
+"""
+
+    return header, body, end

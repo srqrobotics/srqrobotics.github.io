@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="zxx">
 
@@ -38,6 +37,24 @@
             for (var i = 0, length = elements.length; i < length; i++) {
                 elements[i].style = "width:100%;";
             }
+            loadHTML();
+        }
+        function loadHTML() {
+            let xhttp;
+            let element = document.getElementById('catalog');
+            let file = "news/catalog.html"
+            if (file) {
+                xhttp = new XMLHttpRequest();
+                xhttp.onreadystatechange = function () {
+                    if (this.readyState == 4) {
+                        if (this.status == 200) { element.innerHTML = this.responseText; }
+                        if (this.status == 404) { element.innerHTML = "<h1>PAGE NOT FOUND</h1>"; }
+                    }
+                }
+                xhttp.open("GET", `${file}`, true);
+                xhttp.send();
+                return;
+            }
         }
     </script>
 
@@ -45,7 +62,6 @@
 
     <link rel="icon" type="image/png" href="assets/img/favicon.png">
 </head>
-
 
 <body onload="runOnLoad()">
     <!-- Pre Loader -->
@@ -189,7 +205,7 @@
             <div class="row">
 
                 <div class="col-lg-9">
-                    <iframe id="news-feed" src="./news/2023-07-17/news-8.html" style="height: 100vh; border:2px solid #fa5f0b;"
+                    <iframe id="news-feed" src="news/news-1/news.html" style="height: 100vh; border:2px solid #fa5f0b;"
                         width="100%">
                     </iframe>
                 </div>
@@ -197,7 +213,7 @@
                 <div class="col-lg-3">
                     <div id="content"></div>
 
-                    <div class="blog-details-item">
+                    <div class="blog-details-item" style="display: none;">
                         <div class="blog-details-search details-head" style="display: none;">
                             <h3>Search</h3>
                             <form>
@@ -211,81 +227,91 @@
                         </div>
                         <div class="blog-details-post details-head" style="overflow-y: scroll; height: 100vh;">
                             <h3>Recent Posts</h3>
-<ul>
-	<li>
-		<img src='news/2023-07-17/thumbnail.jpg' alt='News Details'>
-		<div class='post-inner'>
-			<span>2023-07-17</span>
-			<a href='#news-feed' onclick="change_iframe('news/2023-07-17/news-8.html')">
-				news-8
-			</a>
-		</div>
-	</li>
-	<li>
-		<img src='news/2023-06-16/thumbnail.jpg' alt='News Details'>
-		<div class='post-inner'>
-			<span>2023-06-16</span>
-			<a href='#news-feed' onclick="change_iframe('news/2023-06-16/news-7.html')">
-				news-7
-			</a>
-		</div>
-	</li>
-	<li>
-		<img src='news/2023-05-10/thumbnail.jpg' alt='News Details'>
-		<div class='post-inner'>
-			<span>2023-05-10</span>
-			<a href='#news-feed' onclick="change_iframe('news/2023-05-10/news-6.html')">
-				news-6
-			</a>
-		</div>
-	</li>
-	<li>
-		<img src='news/2023-04-01/thumbnail.jpg' alt='News Details'>
-		<div class='post-inner'>
-			<span>2023-04-01</span>
-			<a href='#news-feed' onclick="change_iframe('news/2023-04-01/news-5.html')">
-				news-5
-			</a>
-		</div>
-	</li>
-	<li>
-		<img src='news/2023-03-20/thumbnail.jpg' alt='News Details'>
-		<div class='post-inner'>
-			<span>2023-03-20</span>
-			<a href='#news-feed' onclick="change_iframe('news/2023-03-20/news-4.html')">
-				news-4
-			</a>
-		</div>
-	</li>
-	<li>
-		<img src='news/2023-02-15/thumbnail.jpg' alt='News Details'>
-		<div class='post-inner'>
-			<span>2023-02-15</span>
-			<a href='#news-feed' onclick="change_iframe('news/2023-02-15/news-3.html')">
-				news-3
-			</a>
-		</div>
-	</li>
-	<li>
-		<img src='news/2023-02-11/thumbnail.jpg' alt='News Details'>
-		<div class='post-inner'>
-			<span>2023-02-11</span>
-			<a href='#news-feed' onclick="change_iframe('news/2023-02-11/news-2.html')">
-				news-2
-			</a>
-		</div>
-	</li>
-	<li>
-		<img src='news/2023-01-10/thumbnail.jpg' alt='News Details'>
-		<div class='post-inner'>
-			<span>2023-01-10</span>
-			<a href='#news-feed' onclick="change_iframe('news/2023-01-10/news-1.html')">
-				news-1
-			</a>
-		</div>
-	</li>
-</ul>
+                            <!-- Python -->
+                            <ul>
+                                <li>
+                                    <img src="news/news-1/thumbnail.jpg" alt="News Details">
+                                    <div class="post-inner">
+                                        <span>28 January</span>
+                                        <a href="#news-feed" onclick="change_iframe('news/news-1/news.html')">
+                                            NEWS 1
+                                        </a>
+                                    </div>
+                                </li>
 
+                                <li>
+                                    <img src="news/news-2/thumbnail.jpg" alt="News Details">
+                                    <div class="post-inner">
+                                        <span>28 January</span>
+                                        <a href="#news-feed" onclick="change_iframe('news/news-2/news.html')">
+                                            NEWS 2
+                                        </a>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <img src="news/news-3/thumbnail.jpg" alt="News Details">
+                                    <div class="post-inner">
+                                        <span>28 January</span>
+                                        <a href="#news-feed" onclick="change_iframe('news/news-3/news.html')">
+                                            NEWS 3
+                                        </a>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <img src="news/news-4/thumbnail.jpg" alt="News Details">
+
+                                    <div class="post-inner">
+                                        <span>28 January</span>
+                                        <a href="#news-feed" onclick="change_iframe('news/news-4/news.html')">
+                                            NEWS 4
+                                        </a>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <img src="news/news-5/thumbnail.jpg" alt="News Details">
+                                    <div class="post-inner">
+                                        <span>28 January</span>
+                                        <a href="#news-feed" onclick="change_iframe('news/news-5/news.html')">
+                                            NEWS 5
+                                        </a>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <img src="news/news-6/thumbnail.jpg" alt="News Details">
+                                    <div class="post-inner">
+                                        <span>28 January</span>
+                                        <a href="#news-feed" onclick="change_iframe('news/news-6/news.html')">
+                                            NEWS 6
+                                        </a>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <img src="news/news-7/thumbnail.jpg" alt="News Details">
+                                    <div class="post-inner">
+                                        <span>28 January</span>
+                                        <a href="#news-feed" onclick="change_iframe('news/news-7/news.html')">
+                                            NEWS 7
+                                        </a>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <img src="news/news-8/thumbnail.jpg" alt="News Details">
+                                    <div class="post-inner">
+                                        <span>28 January</span>
+                                        <a href="#news-feed" onclick="change_iframe('news/news-8/news.html')">
+                                            NEWS 8
+                                        </a>
+                                    </div>
+                                </li>
+
+                            </ul>
+                            <!-- Python -->
                         </div>
                     </div>
                 </div>
@@ -522,7 +548,7 @@
     <div class="copyright-area">
         <div class="container">
             <div class="copyright-item">
-                <p>Copyright &copy; 2023 SRQ Robotics.</p>
+                <p>Copyright ©2023 SRQ Robotics.</p>
             </div>
         </div>
     </div>
