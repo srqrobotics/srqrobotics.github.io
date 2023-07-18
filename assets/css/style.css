@@ -2828,9 +2828,9 @@ footer:before {
   display: none;
 }
 
-.service-area-two .service-item {
+.service-area-two .service-item{
   background-color: #061b2f;
-  background-image: url("../img/home-three/service-bg.jpg");
+  /* background-image: url("../img/home-three/service-bg.jpg"); */
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
