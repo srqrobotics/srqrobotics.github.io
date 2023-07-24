@@ -67,7 +67,7 @@
         Email.send({
             // SecureToken: "2009fb93-ccd5-4e36-85ec-7f41ca0abce9",
             SecureToken: "f46e29cd-d6ed-4b23-8292-980630a998a4",
-            To: 'info@srqrobotics.com',
+            To: 'srqrobotics@gmail.com',
             From: "info@srqrobotics.com",
             Subject: "Get In Touch",
             Body: "        <b>Name:</b> " + _name
