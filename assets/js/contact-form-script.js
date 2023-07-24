@@ -65,16 +65,16 @@
     // ref: https://www.youtube.com/watch?v=sGQSz22U8VM
     function sendEmail(_name, _email, _phone, _msg_subject, _message) {
         Email.send({
-            SecureToken: "2009fb93-ccd5-4e36-85ec-7f41ca0abce9",
-            To: 'pasi1028@gmail.com',
-            From: "pasindu@srqrobotics.com",
+            // SecureToken: "2009fb93-ccd5-4e36-85ec-7f41ca0abce9",
+            SecureToken: "f46e29cd-d6ed-4b23-8292-980630a998a4",
+            To: 'info@srqrobotics.com',
+            From: "info@srqrobotics.com",
             Subject: "Get In Touch",
             Body: "        <b>Name:</b> " + _name
                 + "<br>   <b>Email:</b> " + _email
                 + "<br>   <b>Phone:</b> " + _phone
                 + "<br> <b>Subject:</b> " + _msg_subject
                 + "<br> <b>Message:</b> <br>" + _message
-
         }).then(
             message => alert(message)
         );
