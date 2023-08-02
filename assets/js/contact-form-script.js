@@ -69,7 +69,7 @@
             SecureToken: "f46e29cd-d6ed-4b23-8292-980630a998a4",
             To: 'srqrobotics@gmail.com',
             From: "info@srqrobotics.com",
-            Subject: "Get In Touch",
+            Subject: "Web Inquiry",
             Body: "        <b>Name:</b> " + _name
                 + "<br>   <b>Email:</b> " + _email
                 + "<br>   <b>Phone:</b> " + _phone
