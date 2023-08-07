@@ -104,9 +104,9 @@ jQuery(function ($) {
 		nav: false,
 		dots: true,
 		smartSpeed: 1000,
-		autoplay: false,
-		autoplayTimeout: 4000,
-		autoplayHoverPause: true,
+		autoplay: true,
+		autoplayTimeout: 3000,
+		autoplayHoverPause: false,
 		responsive:{
 			0:{
 				items: 1,

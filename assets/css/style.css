@@ -1624,15 +1624,16 @@ footer:before {
 }
 
 .logo-area .logo-item img {
-  -webkit-filter: grayscale(100%);
-  filter: grayscale(100%);
+  -webkit-filter: grayscale(0%);
+  filter: grayscale(0%);
   -webkit-transition: 0.5s all ease;
   transition: 0.5s all ease;
 }
 
 .logo-area .logo-item img:hover {
-  -webkit-filter: grayscale(0%);
-  filter: grayscale(0%);
+  -webkit-transform: scale(1.3);
+  -ms-transform: scale(1.3);
+  transform: scale(1.3); 
 }
 
 /*-- End Logo --*/
@@ -3059,7 +3060,7 @@ footer:before {
 /*-- End Page Title --*/
 /*-- Job --*/
 .job-area-three .job-img {
-  background-image: url("../img/about-job-main.jpg");
+  background-image: url("../img/electronic board assembly.jpg");
 }
 
 /*-- End Job --*/
