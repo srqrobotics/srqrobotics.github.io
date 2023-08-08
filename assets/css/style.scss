@@ -788,7 +788,7 @@ button {
     top: -70px;
 
     .foreign-slider {
-        left: calc((100% - 510px) / 2);
+        /*left: calc((100% - 510px) / 2);*/
         position: relative;
 
         .owl-prev {
@@ -830,9 +830,9 @@ button {
     }
     .owl-theme .owl-nav {
         margin-top: 0;
-        position: absolute;
+        /*position: absolute;
         left: -115px;
-        top: 210px;
+        top: 210px;*/
     }
 }
 .foreign-item {
