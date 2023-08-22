@@ -93,18 +93,20 @@ Default CSS
 }
 
 .theme-dark .h1,
-.theme-dark .h2,
-.theme-dark .h3,
+
 .theme-dark .h4,
 .theme-dark .h5,
 .theme-dark .h6,
 .theme-dark h1,
 .theme-dark h2,
-.theme-dark h3,
 .theme-dark h4,
 .theme-dark h5,
 .theme-dark h6 {
-  color: #ffffff !important;
+  color: #f0f0f0 !important;
+}
+
+.theme-dark h3{
+  color: #fa5f0b;
 }
 
 .theme-dark .h1 a,
@@ -232,13 +234,13 @@ Default CSS
 }
 
 .theme-dark .offer-area-two .offer-item {
-  background-color: #0e0e0e;
+  background-color: #000000;
   -webkit-box-shadow: unset;
   box-shadow: unset;
 }
 
 .theme-dark .offer-area {
-  background-color: #0e0e0e;
+  background-color: #000000;
 }
 
 .theme-dark .offer-item {
@@ -246,7 +248,7 @@ Default CSS
 }
 
 .theme-dark .job-area-two {
-  background-color: #0e0e0e;
+  background-color: #000000;
 }
 
 .theme-dark .job-area-two .job-content p {
@@ -262,7 +264,7 @@ Default CSS
 }
 
 .theme-dark .logo-area {
-  background-color: #0e0e0e;
+  background-color: #1f1c1c;
 }
 
 .theme-dark .service-item {
@@ -270,11 +272,11 @@ Default CSS
 }
 
 .theme-dark .service-area-three {
-  background-color: #0e0e0e;
+  background-color: #000000;
 }
 
 .theme-dark .service-details-area .service-details-item .service-details-cat ul li {
-  background-color: #0e0e0e;
+  background-color: #000000;
 }
 
 .theme-dark .service-details-area .service-details-item .service-details-cat ul li a {
@@ -286,7 +288,7 @@ Default CSS
 }
 
 .theme-dark .service-details-area .service-details-item .service-details-form .form-group .form-control {
-  background-color: #0e0e0e;
+  background-color: #000000;
   border: 1px solid #787777;
   color: #ffffff;
 }
@@ -310,15 +312,15 @@ Default CSS
 .theme-dark .foreign-item {
   -webkit-box-shadow: unset;
   box-shadow: unset;
-  background-color: #0e0e0e;
+  background-color: #000000;
 }
 
 .theme-dark .team-item {
-  background-color: #0e0e0e;
+  background-color: #000000;
 }
 
 .theme-dark .team-area-two {
-  background-color: #0e0e0e;
+  background-color: #000000;
 }
 
 .theme-dark .partner-area .partner-wrap {

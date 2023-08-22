@@ -770,13 +770,18 @@
     padding-bottom: 50px;
   }
 
+  /* .service-details-item{
+    animation-name: fadeInUp;
+    animation-delay: 0.4s;
+  } */
+
   .service-details-area .service-details-item .service-details-img {
     margin-bottom: 30px;
   }
 
   .service-details-area .service-details-item .service-details-img h2 {
     margin-bottom: 10px;
-    font-size: 25px;
+    font-size: 205px;
   }
 
   .service-details-area .service-details-item .service-details-robot h2 {

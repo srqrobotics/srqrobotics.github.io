@@ -194,7 +194,7 @@ $white-color:#ffffff;
         }
         .about-img-wrap {
             .about-year {
-                background-color: #0e0e0e;
+                background-color: #000000;
                 h2 {
                     color: $white-color;
                     span {
@@ -223,12 +223,12 @@ $white-color:#ffffff;
     .offer-area-two {
         background-color: $black-color;
         .offer-item {
-            background-color: #0e0e0e;
+            background-color: #000000;
             box-shadow: unset;
         }
     }
     .offer-area {
-        background-color: #0e0e0e;
+        background-color: #000000;
     }
     .offer-item {
         background-color: $black-color;
@@ -236,7 +236,7 @@ $white-color:#ffffff;
 
     //Job
     .job-area-two {
-        background-color: #0e0e0e;
+        background-color: #000000;
         .job-content {
             p {
                 color: $white-color;
@@ -254,7 +254,7 @@ $white-color:#ffffff;
         background-color: $black-color;
     }
     .logo-area {
-        background-color: #0e0e0e;
+        background-color: #000000;
     }
 
     //services
@@ -262,14 +262,14 @@ $white-color:#ffffff;
         background-color: $black-color;
     }
     .service-area-three {
-        background-color: #0e0e0e;
+        background-color: #000000;
     }
     .service-details-area {
         .service-details-item {
             .service-details-cat {
                 ul {
                     li {
-                        background-color: #0e0e0e;
+                        background-color: #000000;
                         a {
                             color: $white-color;
                             &:hover {
@@ -297,7 +297,7 @@ $white-color:#ffffff;
     //Foreing
     .foreign-item {
         box-shadow: unset;
-        background-color: #0e0e0e;
+        background-color: #020202;
     }
 
     //Team
