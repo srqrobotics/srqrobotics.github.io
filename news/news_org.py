@@ -40,7 +40,7 @@ def create_block(dates, latest_news):
             title = get_title(news_dir, date)
             for news in title:
                 file.write('\t\t')
-                file.write(f"<img src='news/{date}/thumbnail.jpg' alt='News Details'>\n")
+                file.write(f"<img src='news/{date}/thumbnail.jpg' alt='Products Details'>\n")
             
                 file.write('\t\t')
                 file.write("<div class='post-inner'>\n")

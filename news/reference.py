@@ -144,7 +144,7 @@ def get_header(news1_path):
                                     <a href="project.html" class="nav-link">Projects</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="news.html" class="nav-link">News</a>
+                                    <a href="news.html" class="nav-link">Products</a>
                                 </li>
                                 <li class="nav-item">
                                     <a href="blog.html" class="nav-link">Blog</a>
@@ -411,7 +411,7 @@ def get_header(news1_path):
                                     <a href="service-details.html" target="_blank">Services</a>
                                 </li>
                                 <li>
-                                    <a href="#" target="_blank">News</a>
+                                    <a href="#" target="_blank">Products</a>
                                 </li>
                                 <li>
                                     <a href="contact.html" target="_blank">Contact</a>
