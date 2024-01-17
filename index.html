@@ -74,6 +74,28 @@
         }
     </style>
 
+    <script>
+        // Use Fetch API to load content from the text file
+        fetch('header.html')
+            .then(response => response.text())
+            .then(content => {
+                // Insert the content into the HTML element
+                document.getElementById('headerContent').innerHTML = content;
+            })
+            .catch(error => console.error('Error loading content:', error));
+    </script>
+
+    <script>
+        // Use Fetch API to load content from the text file
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(content => {
+                // Insert the content into the HTML element
+                document.getElementById('footerContent').innerHTML = content;
+            })
+            .catch(error => console.error('Error loading content:', error));
+    </script>
+
     <title>SRQ Robotics - Experts in Software and Electronic Design</title>
 
     <link rel="icon" type="image/png" href="assets/img/favicon.png">
@@ -90,55 +112,12 @@
     </div>
     <!-- End Pre Loader -->
 
-    <!-- Start Navbar Area -->
-    <div class="header-top-area-two">
-        <div class="navbar-area sticky-top">
-            <!-- Mobile Device -->
-            <div class="mobile-nav">
-                <a href="index.html" class="logo">
-                    <img src="assets/img/logo-one.png" style="height: 40px;" alt="Logo">
-                </a>
-            </div>
-
-            <!-- Desktop Device -->
-            <div class="main-nav">
-                <div class="container">
-                    <nav class="navbar navbar-expand-md navbar-light">
-                        <a class="navbar-brand" href="index.html">
-                            <img src="assets/img/logo.png" style="height: 60px;" class="main-logo" alt="Logo">
-                            <img src="assets/img/logo-three.png" style="height: 60px;" class="white-logo" alt="Logo">
-                        </a>
-                        <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
-                            <ul class="navbar-nav">
-                                <li class="nav-item">
-                                    <a href="service-details.html" class="nav-link"></a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="index.html" class="nav-link">Home</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="service-details.html" class="nav-link">Services</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="sample-app.html" class="nav-link">Projects</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="#" class="nav-link">Products</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="#" class="nav-link">Blog</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="contact.html" class="nav-link dropdown-toggle">Contact</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </nav>
-                </div>
-            </div>
-        </div>
+    <!-- Header -->
+    <div id="headerContent">
+        <!-- Content will be loaded here -->
     </div>
-    <!-- End Navbar Area -->
+    <!-- End Header -->
+
 
     <!-- Banner -->
     <div class="banner-area banner-img-three">
@@ -147,8 +126,9 @@
                 <div class="container">
                     <div class="banner-content">
                         <h1>Experts in Electronic & Software Design</h1>
-                        <p>Electronic Circuits  |  IOT & Embedded Systems  |  Digital Filters  |  Sensor Networks | Web Dashboards |
-                            Mobile Apps  and possibly everything you can imagine.
+                        <p>Electronic Circuits | IOT & Embedded Systems | Digital Filters | Sensor Networks | Web
+                            Dashboards |
+                            Mobile Apps and possibly everything you can imagine.
                         </p>
                         <a class="cmn-btn" href="service-details.html">
                             Discover More
@@ -177,7 +157,8 @@
                         <h3>
                             <a href="service-details.html">PCB Designing</a>
                         </h3>
-                        <p>Design a wide range of multi-layer boards, from low-power devices to industrial-grade machine controllers. </p>
+                        <p>Design a wide range of multi-layer boards, from low-power devices to industrial-grade machine
+                            controllers. </p>
                         <a class="service-link" href="service-details.html">Read More</a>
                     </div>
                 </div>
@@ -188,7 +169,8 @@
                         <h3>
                             <a href="service-details.html">IoT & Embedded Systems</a>
                         </h3>
-                        <p>Craft the perfect recipe for electronic hardware and firmware, from wearable devices to wireless networks.</p>
+                        <p>Craft the perfect recipe for electronic hardware and firmware, from wearable devices to
+                            wireless networks.</p>
                         <a class="service-link" href="service-details.html">Read More</a>
                     </div>
                 </div>
@@ -199,7 +181,8 @@
                         <h3>
                             <a href="service-details.html">Sensor Fusion</a>
                         </h3>
-                        <p>Develop mathematical models to combine multiple sensor measurements for improved accuracy & reliability.</p>
+                        <p>Develop mathematical models to combine multiple sensor measurements for improved accuracy &
+                            reliability.</p>
                         <a class="service-link" href="service-details.html">Read More</a>
                     </div>
                 </div>
@@ -211,7 +194,8 @@
                         <h3>
                             <a href="service-details.html">Full Stack Development</a>
                         </h3>
-                        <p>Design, develop, and deploy complete web applications, from the user interface to the back-end server logic.</p>
+                        <p>Design, develop, and deploy complete web applications, from the user interface to the
+                            back-end server logic.</p>
                         <a class="service-link" href="service-details.html">Read More</a>
                     </div>
                 </div>
@@ -222,7 +206,8 @@
                         <h3>
                             <a href="service-details.html">Mobile Apps</a>
                         </h3>
-                        <p>Integrate internal hardware sensors and unlock the capabilities of wireless communications in Android & iOS. </p>
+                        <p>Integrate internal hardware sensors and unlock the capabilities of wireless communications in
+                            Android & iOS. </p>
                         <a class="service-link" href="service-details.html">Read More</a>
                     </div>
                 </div>
@@ -233,7 +218,8 @@
                         <h3>
                             <a href="service-details.html">Simulations</a>
                         </h3>
-                        <p>Implement, test, and visualize the behavior of algorithms & datasets before testing them on actual systems.</p>
+                        <p>Implement, test, and visualize the behavior of algorithms & datasets before testing them on
+                            actual systems.</p>
                         <a class="service-link" href="service-details.html">Read More</a>
                     </div>
                 </div>
@@ -254,7 +240,8 @@
 
                 <div class="offer-item">
                     <div class="offer-top">
-                        <img src="assets/img/home-two/automated-robot.jpg" alt="Autonomous robot travelling on the ground">
+                        <img src="assets/img/home-two/automated-robot.jpg"
+                            alt="Autonomous robot travelling on the ground">
                         <i class="flaticon-robotic-arm"></i>
                     </div>
                     <div class="offer-bottom">
@@ -273,7 +260,8 @@
 
                 <div class="offer-item">
                     <div class="offer-top">
-                        <img src="assets/img/home-two/automotive electronics.jpg" alt="Pressing touch screen in a car electronic system">
+                        <img src="assets/img/home-two/automotive electronics.jpg"
+                            alt="Pressing touch screen in a car electronic system">
                         <i class="flaticon-automation"></i>
                     </div>
                     <div class="offer-bottom">
@@ -292,7 +280,8 @@
 
                 <div class="offer-item">
                     <div class="offer-top">
-                        <img src="assets/img/home-two/digital health tech.jpg" alt="Healthcare app with remote patient monitoring">
+                        <img src="assets/img/home-two/digital health tech.jpg"
+                            alt="Healthcare app with remote patient monitoring">
                         <i class="flaticon-defribillator"></i>
                     </div>
                     <div class="offer-bottom">
@@ -311,7 +300,8 @@
 
                 <div class="offer-item">
                     <div class="offer-top">
-                        <img src="assets/img/home-two/smart-farm-monitoring-system.jpg" alt="Monitoring smart greenhouse with the mobile app">
+                        <img src="assets/img/home-two/smart-farm-monitoring-system.jpg"
+                            alt="Monitoring smart greenhouse with the mobile app">
                         <i class="flaticon-lab-tool"></i>
                     </div>
                     <div class="offer-bottom">
@@ -330,7 +320,8 @@
 
                 <div class="offer-item">
                     <div class="offer-top">
-                        <img src="assets/img/home-two/vehicle fleet management.jpg" alt="Managing and tracking transport vehicle fleet through the web dashboard">
+                        <img src="assets/img/home-two/vehicle fleet management.jpg"
+                            alt="Managing and tracking transport vehicle fleet through the web dashboard">
                         <i class="flaticon-security-purposes"></i>
                     </div>
                     <div class="offer-bottom">
@@ -349,7 +340,8 @@
 
                 <div class="offer-item">
                     <div class="offer-top">
-                        <img src="assets/img/home-two/electronic robot arm.jpg" alt="Electronic robot arm soldering a circuit">
+                        <img src="assets/img/home-two/electronic robot arm.jpg"
+                            alt="Electronic robot arm soldering a circuit">
                         <i class="flaticon-oil-drill"></i>
                     </div>
                     <div class="offer-bottom">
@@ -365,7 +357,7 @@
                         <img src="assets/img/home-two/offer-shape.png" alt="Offer">
                     </div>
                 </div>
-                
+
                 <div class="offer-item">
                     <div class="offer-top">
                         <img src="assets/img/home-two/smart construction site.jpg" alt="Smart construction site">
@@ -387,7 +379,8 @@
 
                 <div class="offer-item">
                     <div class="offer-top">
-                        <img src="assets/img/home-two/STEM electronic class.jpg" alt="Kids assembling electronics kits in a classroom">
+                        <img src="assets/img/home-two/STEM electronic class.jpg"
+                            alt="Kids assembling electronics kits in a classroom">
                         <i class="flaticon-lecture"></i>
                     </div>
                     <div class="offer-bottom">
@@ -458,7 +451,8 @@
                                 </div>
                             </div>
                         </div>
-                        <p class="about-p"> Our multi-disciplinary engineering team maintains a high return rate of international clients
+                        <p class="about-p"> Our multi-disciplinary engineering team maintains a high return rate of
+                            international clients
                             by covering a wide range of design requirements.
                         </p>
                         <a class="cmn-btn" href="sample-app.html">
@@ -478,148 +472,151 @@
     <!-- End About -->
 
 
-  <!-- Job -->
-  <div class="job-area job-area-two job-area-three">
-    <div class="container-fluid">
-        <div class="row m-0">
-            <div class="col-lg-6">
-                <div class="job-img">
-                    <img src="assets/img/electronic board assembly.jpg" alt="Assembling electronic components in a circuit board">
-                </div>
-            </div>
-            <div class="col-lg-6">
-                <div class="job-content">
-                    <div class="section-title">
-                        <h2>Our uniqueness</h2>
+    <!-- Job -->
+    <div class="job-area job-area-two job-area-three">
+        <div class="container-fluid">
+            <div class="row m-0">
+                <div class="col-lg-6">
+                    <div class="job-img">
+                        <img src="assets/img/electronic board assembly.jpg"
+                            alt="Assembling electronic components in a circuit board">
                     </div>
-                    <p>
-                        We are a team of award-winning engineers with expertise in a wide range of disciplines. We are passionate about delivering high-quality 
-                        products and are the best choice for all your engineering needs.
-                    </p>
-                    <ul>
-                        <li>
-                            <i class='bx bx-check'></i>
-                            Innovative Solutions
-                        </li>
-                        <li>
-                            <i class='bx bx-check'></i>
-                            End to End Designing
-                        </li>
-                        <li>
-                            <i class='bx bx-check'></i>
-                            6+ Years Experience 
-                        </li>
-                        <li>
-                            <i class='bx bx-check'></i>
-                            In-house Development 
-                        </li>
-                        <li>
-                            <i class='bx bx-check'></i>
-                            Accept NDAs
-                        </li>
-                        <li>
-                            <i class='bx bx-check'></i>
-                            Proven Track Record
-                        </li>
-                    </ul>
+                </div>
+                <div class="col-lg-6">
+                    <div class="job-content">
+                        <div class="section-title">
+                            <h2>Our uniqueness</h2>
+                        </div>
+                        <p>
+                            We are a team of award-winning engineers with expertise in a wide range of disciplines. We
+                            are passionate about delivering high-quality
+                            products and are the best choice for all your engineering needs.
+                        </p>
+                        <ul>
+                            <li>
+                                <i class='bx bx-check'></i>
+                                Innovative Solutions
+                            </li>
+                            <li>
+                                <i class='bx bx-check'></i>
+                                End to End Designing
+                            </li>
+                            <li>
+                                <i class='bx bx-check'></i>
+                                6+ Years Experience
+                            </li>
+                            <li>
+                                <i class='bx bx-check'></i>
+                                In-house Development
+                            </li>
+                            <li>
+                                <i class='bx bx-check'></i>
+                                Accept NDAs
+                            </li>
+                            <li>
+                                <i class='bx bx-check'></i>
+                                Proven Track Record
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
-<!-- End Job -->
+    <!-- End Job -->
 
-<!-- Logo -->
-<div class="logo-area pt-100 pb-70">
-    <div class="container">
-        <div class="section-title">
-            <span class="sub-title">Technologies</span>
-            <h2>Technology Competance</h2>
-        </div>
-        <div class="row">
-            <div class="col-6 col-lg-5">
-                <div class="logo-item">
-                    <img src="assets/img/home-two/logo/nordic-semiconductor-logo.png" alt="Nordic semiconductor logo">
+    <!-- Logo -->
+    <div class="logo-area pt-100 pb-70">
+        <div class="container">
+            <div class="section-title">
+                <span class="sub-title">Technologies</span>
+                <h2>Technology Competance</h2>
+            </div>
+            <div class="row">
+                <div class="col-6 col-lg-5">
+                    <div class="logo-item">
+                        <img src="assets/img/home-two/logo/nordic-semiconductor-logo.png"
+                            alt="Nordic semiconductor logo">
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="logo-item">
+                        <img src="assets/img/home-two/logo/esp-logo.png" alt="Espressiff logo">
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="logo-item">
+                        <img src="assets/img/home-two/logo/stm32-logo.png" alt="STM32 logo">
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="logo-item">
+                        <img src="assets/img/home-two/logo/raspberrypi-logo.png" alt="Raspberry pi logo">
+                    </div>
+                </div>
+                <div class="offset-3 offset-md-0 col-lg-5">
+                    <div class="logo-item">
+                        <img src="assets/img/home-two/logo/microchip-logo.png" alt="Microchip logo">
+                    </div>
                 </div>
             </div>
-            <div class="col-lg-5">
-                <div class="logo-item">
-                    <img src="assets/img/home-two/logo/esp-logo.png" alt="Espressiff logo">
+            <div class="row">
+                <div class="col-6 col-lg-5">
+                    <div class="logo-item">
+                        <img src="assets/img/home-two/logo/nfc-logo.png" alt="NFC logo">
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="logo-item">
+                        <img src="assets/img/home-two/logo/gps-logo.png" alt="GPS logo">
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="logo-item">
+                        <img src="assets/img/home-two/logo/mqtt-logo.png" alt="MQTT logo">
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="logo-item">
+                        <img src="assets/img/home-two/logo/wifi-logo.png" alt="WiFi logo">
+                    </div>
+                </div>
+                <div class="offset-3 offset-md-0 col-lg-5">
+                    <div class="logo-item">
+                        <img src="assets/img/home-two/logo/bluetooth-le-logo.png" alt="Bluetooth LE logo">
+                    </div>
                 </div>
             </div>
-            <div class="col-lg-5">
-                <div class="logo-item">
-                    <img src="assets/img/home-two/logo/stm32-logo.png" alt="STM32 logo">
+            <div class="row">
+                <div class="col-6 col-lg-5">
+                    <div class="logo-item">
+                        <img src="assets/img/home-two/logo/arduino-logo.png" alt="Arduino logo">
+                    </div>
                 </div>
-            </div>
-            <div class="col-lg-5">
-                <div class="logo-item">
-                    <img src="assets/img/home-two/logo/raspberrypi-logo.png" alt="Raspberry pi logo">
+                <div class="col-lg-5">
+                    <div class="logo-item">
+                        <img src="assets/img/home-two/logo/platformio-logo.png" alt="Platform io Logo">
+                    </div>
                 </div>
-            </div>
-            <div class="offset-3 offset-md-0 col-lg-5">
-                <div class="logo-item">
-                    <img src="assets/img/home-two/logo/microchip-logo.png" alt="Microchip logo">
+                <div class="col-lg-5">
+                    <div class="logo-item">
+                        <img src="assets/img/home-two/logo/matlab-logo.png" alt="Matlab logo">
+                    </div>
                 </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-6 col-lg-5">
-                <div class="logo-item">
-                    <img src="assets/img/home-two/logo/nfc-logo.png" alt="NFC logo">
+                <div class="col-lg-5">
+                    <div class="logo-item">
+                        <img src="assets/img/home-two/logo/python-logo.png" alt="Python logo">
+                    </div>
                 </div>
-            </div>
-            <div class="col-lg-5">
-                <div class="logo-item">
-                    <img src="assets/img/home-two/logo/gps-logo.png" alt="GPS logo">
-                </div>
-            </div>
-            <div class="col-lg-5">
-                <div class="logo-item">
-                    <img src="assets/img/home-two/logo/mqtt-logo.png" alt="MQTT logo">
-                </div>
-            </div>
-            <div class="col-lg-5">
-                <div class="logo-item">
-                    <img src="assets/img/home-two/logo/wifi-logo.png" alt="WiFi logo">
-                </div>
-            </div>
-            <div class="offset-3 offset-md-0 col-lg-5">
-                <div class="logo-item">
-                    <img src="assets/img/home-two/logo/bluetooth-le-logo.png" alt="Bluetooth LE logo">
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-6 col-lg-5">
-                <div class="logo-item">
-                    <img src="assets/img/home-two/logo/arduino-logo.png" alt="Arduino logo">
-                </div>
-            </div>
-            <div class="col-lg-5">
-                <div class="logo-item">
-                    <img src="assets/img/home-two/logo/platformio-logo.png" alt="Platform io Logo">
-                </div>
-            </div>
-            <div class="col-lg-5">
-                <div class="logo-item">
-                    <img src="assets/img/home-two/logo/matlab-logo.png" alt="Matlab logo">
-                </div>
-            </div>
-            <div class="col-lg-5">
-                <div class="logo-item">
-                    <img src="assets/img/home-two/logo/python-logo.png" alt="Python logo">
-                </div>
-            </div>
-            <div class="offset-3 offset-md-0 col-lg-5">
-                <div class="logo-item">
-                    <img src="assets/img/home-two/logo/android-studio-logo.png" alt="Android Studio logo">
+                <div class="offset-3 offset-md-0 col-lg-5">
+                    <div class="logo-item">
+                        <img src="assets/img/home-two/logo/android-studio-logo.png" alt="Android Studio logo">
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
-<!-- End Logo -->
+    <!-- End Logo -->
 
     <!-- Foreign -->
     <div class="foreign-area pt-100">
@@ -629,114 +626,114 @@
                 <h2>Our Featured Projects</h2>
             </div>
             <div class="foreign-slider owl-theme owl-carousel">
-                    <div class="foreign-item">
-                        <a href="#">
-                            <img src="assets/img/home-one/project1.jpg" alt="Foreign">
-                        </a>
-                        <div class="foreign-bottom">
-                            <h3>
-                                <a href="#">Fitness</a>
-                            </h3>
-                            <span>Progress Tracker for Weight Training</span>
-                        </div>
+                <div class="foreign-item">
+                    <a href="#">
+                        <img src="assets/img/home-one/project1.jpg" alt="Foreign">
+                    </a>
+                    <div class="foreign-bottom">
+                        <h3>
+                            <a href="#">Fitness</a>
+                        </h3>
+                        <span>Progress Tracker for Weight Training</span>
                     </div>
+                </div>
 
-                    <div class="foreign-item">
-                        <a href="#">
-                            <img src="assets/img/home-one/project2.jpg" alt="Foreign">
-                        </a>
-                        <div class="foreign-bottom">
-                            <h3>
-                                <a href="#">Robotics</a>
-                            </h3>
-                            <span>Programmable Nano Drone for STEM Education</span>
-                        </div>
+                <div class="foreign-item">
+                    <a href="#">
+                        <img src="assets/img/home-one/project2.jpg" alt="Foreign">
+                    </a>
+                    <div class="foreign-bottom">
+                        <h3>
+                            <a href="#">Robotics</a>
+                        </h3>
+                        <span>Programmable Nano Drone for STEM Education</span>
                     </div>
+                </div>
 
-                    <div class="foreign-item">
-                        <a href="#">
-                            <img src="assets/img/home-one/project3.jpg" alt="Foreign">
-                        </a>
-                        <div class="foreign-bottom">
-                            <h3>
-                                <a href="#">Smart Agriculture</a>
-                            </h3>
-                            <span>Automated Hydroponics System with Dashboard</span>
-                        </div>
+                <div class="foreign-item">
+                    <a href="#">
+                        <img src="assets/img/home-one/project3.jpg" alt="Foreign">
+                    </a>
+                    <div class="foreign-bottom">
+                        <h3>
+                            <a href="#">Smart Agriculture</a>
+                        </h3>
+                        <span>Automated Hydroponics System with Dashboard</span>
                     </div>
+                </div>
 
-                    <div class="foreign-item">
-                        <a href="#">
-                            <img src="assets/img/home-one/project4.jpg" alt="Foreign">
-                        </a>
-                        <div class="foreign-bottom">
-                            <h3>
-                                <a href="#">Healthcare</a>
-                            </h3>
-                            <span>Breath Waves and Chest Movement Tracker</span>
-                        </div>
+                <div class="foreign-item">
+                    <a href="#">
+                        <img src="assets/img/home-one/project4.jpg" alt="Foreign">
+                    </a>
+                    <div class="foreign-bottom">
+                        <h3>
+                            <a href="#">Healthcare</a>
+                        </h3>
+                        <span>Breath Waves and Chest Movement Tracker</span>
                     </div>
+                </div>
 
-                    <div class="foreign-item">
-                        <a href="#">
-                            <img src="assets/img/projects/horse-leg-movement-tracker.jpg" alt="Foreign">
-                        </a>
-                        <div class="foreign-bottom">
-                            <h3>
-                                <a href="#">Logistics</a>
-                            </h3>
-                            <span>Temperature and Location Tracker for Cold Storages</span>
-                        </div>
+                <div class="foreign-item">
+                    <a href="#">
+                        <img src="assets/img/projects/horse-leg-movement-tracker.jpg" alt="Foreign">
+                    </a>
+                    <div class="foreign-bottom">
+                        <h3>
+                            <a href="#">Logistics</a>
+                        </h3>
+                        <span>Temperature and Location Tracker for Cold Storages</span>
                     </div>
+                </div>
 
-                    <div class="foreign-item">
-                        <a href="#">
-                            <img src="assets/img/home-one/project6.jpg" alt="Foreign">
-                        </a>
-                        <div class="foreign-bottom">
-                            <h3>
-                                <a href="#">Robotics</a>
-                            </h3>
-                            <span>Automated Seed Spreading Drone</span>
-                        </div>
+                <div class="foreign-item">
+                    <a href="#">
+                        <img src="assets/img/home-one/project6.jpg" alt="Foreign">
+                    </a>
+                    <div class="foreign-bottom">
+                        <h3>
+                            <a href="#">Robotics</a>
+                        </h3>
+                        <span>Automated Seed Spreading Drone</span>
                     </div>
+                </div>
 
-                    <div class="foreign-item">
-                        <a href="#">
-                            <img src="assets/img/home-one/project7.jpg" alt="Foreign">
-                        </a>
-                        <div class="foreign-bottom">
-                            <h3>
-                                <a href="#">Navigation</a>
-                            </h3>
-                            <span>Ultra Precise Cargo Ship Motion Tracker</span>
-                        </div>
+                <div class="foreign-item">
+                    <a href="#">
+                        <img src="assets/img/home-one/project7.jpg" alt="Foreign">
+                    </a>
+                    <div class="foreign-bottom">
+                        <h3>
+                            <a href="#">Navigation</a>
+                        </h3>
+                        <span>Ultra Precise Cargo Ship Motion Tracker</span>
                     </div>
+                </div>
 
-                    <div class="foreign-item">
-                        <a href="#">
-                            <img src="assets/img/home-one/project8.jpg" alt="Foreign">
-                        </a>
-                        <div class="foreign-bottom">
-                            <h3>
-                                <a href="#">Sanitization</a>
-                            </h3>
-                            <span>UV Disinfector for Passenger Aircrafts</span>
-                        </div>
+                <div class="foreign-item">
+                    <a href="#">
+                        <img src="assets/img/home-one/project8.jpg" alt="Foreign">
+                    </a>
+                    <div class="foreign-bottom">
+                        <h3>
+                            <a href="#">Sanitization</a>
+                        </h3>
+                        <span>UV Disinfector for Passenger Aircrafts</span>
                     </div>
+                </div>
 
-                    <div class="foreign-item">
-                        <a href="#">
-                            <img src="assets/img/home-one/project9.jpg" alt="Foreign">
-                        </a>
-                        <div class="foreign-bottom">
-                            <h3>
-                                <a href="#">Music & Audio</a>
-                            </h3>
-                            <span>Audio Effect Processor for Electric Guitars</span>
-                        </div>
+                <div class="foreign-item">
+                    <a href="#">
+                        <img src="assets/img/home-one/project9.jpg" alt="Foreign">
+                    </a>
+                    <div class="foreign-bottom">
+                        <h3>
+                            <a href="#">Music & Audio</a>
+                        </h3>
+                        <span>Audio Effect Processor for Electric Guitars</span>
                     </div>
-                
+                </div>
+
             </div>
         </div>
     </div>
@@ -978,126 +975,10 @@
     <!-- End Logo -->
 
     <!-- Footer -->
-    <footer class="pt-100 pb-70">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-6 col-lg-3">
-                    <div class="footer-item">
-                        <div class="footer-logo">
-                            <a class="logo-link" href="index.html">
-                                <img src="assets/img/logo-three.png" alt="Logo">
-                            </a>
-                            <p>Our mission is to provide unique solutions in
-                                Software, IoT and Smart Electronics streams for humanitarian
-                                assistance while improving the quality of life.</p>
-                            <ul>
-                                <li>
-                                    <a href="https://web.facebook.com/srqrobotics" target="_blank">
-                                        <i class='bx bxl-facebook'></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://www.linkedin.com/company/srq-robotics" target="_blank">
-                                        <i class='bx bxl-linkedin'></i>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-lg-3">
-                    <div class="footer-item">
-                        <div class="footer-service">
-                            <h3>Services</h3>
-                            <ul>
-                                <li>
-                                    <a href="service-details.html" target="_blank">Full Stack</a>
-                                </li>
-                                <li>
-                                    <a href="service-details.html" target="_blank">Mobile Apps</a>
-                                </li>
-                                <li>
-                                    <a href="service-details.html" target="_blank">Simulations</a>
-                                </li>
-                                <li>
-                                    <a href="service-details.html" target="_blank">PCB Designing</a>
-                                </li>
-                                <li>
-                                    <a href="service-details.html" target="_blank">IoT & Embedded Systems</a>
-                                </li>
-                                <li>
-                                    <a href="service-details.html" target="_blank">Sensor Fusion</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-lg-3">
-                    <div class="footer-item">
-                        <div class="footer-service">
-                            <h3>Useful Links</h3>
-                            <ul>
-                                <li>
-                                    <a href="index.html" target="_blank">Home</a>
-                                </li>
-                                <li>
-                                    <a href="#" target="_blank">About</a>
-                                </li>
-                                <li>
-                                    <a href="#" target="_blank">Projects</a>
-                                </li>
-                                <li>
-                                    <a href="service-details.html" target="_blank">Services</a>
-                                </li>
-                                <li>
-                                    <a href="#" target="_blank">Products</a>
-                                </li>
-                                <li>
-                                    <a href="contact.html" target="_blank">Contact</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-lg-3">
-                    <div class="footer-item">
-                        <div class="footer-touch">
-                            <h3>Get In Touch</h3>
-                            <ul>
-                                <li>
-                                    <i class='bx bxs-phone-call'></i>
-                                    <h4>Phone</h4>
-                                    <a href="tel:+94770695151">(+94) 77 069 5151</a>
-                                </li>
-                                <li>
-                                    <i class='bx bx-mail-send'></i>
-                                    <h4>Email</h4>
-                                    <a href="mailto:info@srqrobotics.com">info@srqrobotics.com</a>
-                                </li>
-                                <li>
-                                    <i class='bx bx-location-plus'></i>
-                                    <h4>Location</h4>
-                                    <span>Colombo, Sri Lanka <br> Idaho, USA.</span>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <!-- End Footer -->
-
-    <!-- Copyright -->
-    <div class="copyright-area">
-        <div class="container">
-            <div class="copyright-item">
-                <p>Copyright ©2023 SRQ Robotics.</p>
-            </div>
-        </div>
+    <div id="footerContent">
+        <!-- Content will be loaded here -->
     </div>
-    <!-- End Copyright -->
-
+    <!-- End Footer -->
 
     <!-- Essential JS -->
     <script src="assets/js/jquery.min.js"></script>
