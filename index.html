@@ -74,28 +74,6 @@
         }
     </style>
 
-    <script>
-        // Use Fetch API to load content from the text file
-        fetch('header.html')
-            .then(response => response.text())
-            .then(content => {
-                // Insert the content into the HTML element
-                document.getElementById('headerContent').innerHTML = content;
-            })
-            .catch(error => console.error('Error loading content:', error));
-    </script>
-
-    <script>
-        // Use Fetch API to load content from the text file
-        fetch('footer.html')
-            .then(response => response.text())
-            .then(content => {
-                // Insert the content into the HTML element
-                document.getElementById('footerContent').innerHTML = content;
-            })
-            .catch(error => console.error('Error loading content:', error));
-    </script>
-
     <title>SRQ Robotics - Experts in Software and Electronic Design</title>
 
     <link rel="icon" type="image/png" href="assets/img/favicon.png">
@@ -112,12 +90,11 @@
     </div>
     <!-- End Pre Loader -->
 
-    <!-- Header -->
-    <div id="headerContent">
+    <!-- NavBar -->
+    <div id="NavBarContent">
         <!-- Content will be loaded here -->
     </div>
-    <!-- End Header -->
-
+    <!-- End NavBar -->
 
     <!-- Banner -->
     <div class="banner-area banner-img-three">
@@ -140,8 +117,6 @@
         </div>
     </div>
     <!-- End Banner -->
-
-
 
     <!-- Service -->
     <section class="service-area-two pt-100 pb-70">
@@ -470,7 +445,6 @@
         </div>
     </section>
     <!-- End About -->
-
 
     <!-- Job -->
     <div class="job-area job-area-two job-area-three">
@@ -999,6 +973,8 @@
     <script src="assets/js/jquery.magnific-popup.min.js"></script>
     <!-- Custom JS -->
     <script src="assets/js/custom.js"></script>
+    <!-- ContentLoader JS -->
+    <script src="assets/js/contentLoader.js"></script>
 </body>
 
 </html>
