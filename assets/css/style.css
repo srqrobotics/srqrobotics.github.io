@@ -2842,9 +2842,11 @@ footer:before {
   color: #fa5f0b;
 }
 
+/*
 .service-area-two .service-item:hover:after {
   opacity: .80;
 }
+*/
 
 .service-area-two .service-item:before {
   display: none;
@@ -2857,7 +2859,8 @@ footer:before {
   height: 100%;
   top: 0;
   left: 0;
-  background-color: #061b2f;
+  /* background-color: #061b2f; */
+  background-color: rgba(6, 27, 47, 0.9);
   z-index: -1;
   border-radius: 10px;
   -webkit-transition: 0.5s all ease;
