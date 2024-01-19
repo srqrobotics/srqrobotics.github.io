@@ -30,6 +30,16 @@
     <title>Robtic - Manufacturing Factory HTML Template</title>
 
     <link rel="icon" type="image/png" href="assets/img/favicon.png">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DF79P7GSTY">
+    </script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-DF79P7GSTY');
+    </script>
 </head>
 
 <body>
@@ -182,7 +192,34 @@
     <!-- Custom JS -->
     <script src="assets/js/custom.js"></script>
     <!-- ContentLoader JS -->
-    <script src="assets/js/contentLoader.js"></script>
+    <script>
+        // Use Fetch API to load content from the text file
+        fetch('./assets/common/topheader.html')
+            .then(response => response.text())
+            .then(content => {
+                // Insert the content into the HTML element
+                document.getElementById('TopHeaderContent').innerHTML = content;
+            })
+            .catch(error => console.error('Error loading content:', error));
+
+        // Use Fetch API to load content from the text file
+        fetch('./assets/common/NavBar.html')
+            .then(response => response.text())
+            .then(content => {
+                // Insert the content into the HTML element
+                document.getElementById('NavBarContent').innerHTML = content;
+            })
+            .catch(error => console.error('Error loading content:', error));
+
+        // Use Fetch API to load content from the text file
+        fetch('./assets/common/footer.html')
+            .then(response => response.text())
+            .then(content => {
+                // Insert the content into the HTML element
+                document.getElementById('footerContent').innerHTML = content;
+            })
+            .catch(error => console.error('Error loading content:', error));
+    </script>
 </body>
 
 </html>

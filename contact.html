@@ -27,12 +27,51 @@
     <!-- Responsive CSS -->
     <link rel="stylesheet" href="assets/css/responsive.css">
 
-    <title>SRQ Robotics - Contact</title>
+    <title>Contact Electronic Engineering Company - SRQ Robotics</title>
+    <meta name="description"
+        content="Contact SRQ Robotics for cutting-edge technical solutions. Reach out to our experts via our contact page for inquiries, collaboration, or technical support." />
 
     <link rel="icon" type="image/png" href="assets/img/favicon.png">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DF79P7GSTY">
+    </script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-DF79P7GSTY');
+    </script>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-YTP1QET5FQ"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-YTP1QET5FQ');
+    </script>
+
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-N2Q9P4PG');</script>
+    <!-- End Google Tag Manager -->
 </head>
 
 <body onload="setTheme('theme-dark')">
+
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N2Q9P4PG" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
     <!-- Pre Loader -->
     <div class="loader">
         <div class="d-table">
@@ -64,7 +103,7 @@
                         <h2>Contact</h2>
                         <ul>
                             <li>
-                                <a href="index.html">Home</a>
+                                <a href="/">Home</a>
                             </li>
                             <li>
                                 <span>/</span>
@@ -95,10 +134,10 @@
                             <h4>Our Located Place</h4>
                             <li>
                                 <i class='bx bx-location-plus'></i>
-                                Colombo, Sri Lanka.
+                                Houston, Texas, USA.
                                 <br>
                                 <i class='bx bx-location-plus'></i>
-                                Idaho, United States.
+                                Colombo, Sri Lanka.
                             </li>
                             <h4>eMail Us</h4>
                             <li>
@@ -117,8 +156,8 @@
                             <h4>Call Us</h4>
                             <li>
                                 <i class='bx bx-phone-call'></i>
-                                <a href="tel:+94770695151">
-                                    (+94) 77 069 5151
+                                <a href="tel:+17377101504">
+                                    +1 (737) 710-1504
                                 </a>
                             </li>
                         </ul>
@@ -222,7 +261,34 @@
     <!-- Custom JS -->
     <script src="assets/js/custom.js"></script>
     <!-- ContentLoader JS -->
-    <script src="assets/js/contentLoader.js"></script>
+    <script>
+        // Use Fetch API to load content from the text file
+        fetch('./assets/common/topheader.html')
+            .then(response => response.text())
+            .then(content => {
+                // Insert the content into the HTML element
+                document.getElementById('TopHeaderContent').innerHTML = content;
+            })
+            .catch(error => console.error('Error loading content:', error));
+
+        // Use Fetch API to load content from the text file
+        fetch('./assets/common/NavBar.html')
+            .then(response => response.text())
+            .then(content => {
+                // Insert the content into the HTML element
+                document.getElementById('NavBarContent').innerHTML = content;
+            })
+            .catch(error => console.error('Error loading content:', error));
+
+        // Use Fetch API to load content from the text file
+        fetch('./assets/common/footer.html')
+            .then(response => response.text())
+            .then(content => {
+                // Insert the content into the HTML element
+                document.getElementById('footerContent').innerHTML = content;
+            })
+            .catch(error => console.error('Error loading content:', error));
+    </script>
 </body>
 
 </html>

@@ -27,12 +27,50 @@
     <!-- Responsive CSS -->
     <link rel="stylesheet" href="assets/css/responsive.css">
 
-    <title>SRQ Robotics - Services</title>
+    <title>Applications | Electronics Technology, IoT & Embedded Systems - SRQ Robotics</title>
+    <meta name="description"
+        content="We cover electronic and software developments in healthcare, sports and fitness, agriculture, smart homes, transportation, construction and STEM Education." />
 
     <link rel="icon" type="image/png" href="assets/img/favicon.png">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DF79P7GSTY">
+    </script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-DF79P7GSTY');
+    </script>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-YTP1QET5FQ"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-YTP1QET5FQ');
+    </script>
+
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-N2Q9P4PG');</script>
+    <!-- End Google Tag Manager -->
 </head>
 
 <body onload="setTheme('theme-dark')">
+
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N2Q9P4PG" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
     <!-- Pre Loader -->
     <div class="loader">
         <div class="d-table">
@@ -759,7 +797,34 @@
     <!-- Custom JS -->
     <script src="assets/js/custom.js"></script>
     <!-- ContentLoader JS -->
-    <script src="assets/js/contentLoader.js"></script>
+    <script>
+        // Use Fetch API to load content from the text file
+        fetch('./assets/common/topheader.html')
+            .then(response => response.text())
+            .then(content => {
+                // Insert the content into the HTML element
+                document.getElementById('TopHeaderContent').innerHTML = content;
+            })
+            .catch(error => console.error('Error loading content:', error));
+
+        // Use Fetch API to load content from the text file
+        fetch('./assets/common/NavBar.html')
+            .then(response => response.text())
+            .then(content => {
+                // Insert the content into the HTML element
+                document.getElementById('NavBarContent').innerHTML = content;
+            })
+            .catch(error => console.error('Error loading content:', error));
+
+        // Use Fetch API to load content from the text file
+        fetch('./assets/common/footer.html')
+            .then(response => response.text())
+            .then(content => {
+                // Insert the content into the HTML element
+                document.getElementById('footerContent').innerHTML = content;
+            })
+            .catch(error => console.error('Error loading content:', error));
+    </script>
 </body>
 
 </html>
