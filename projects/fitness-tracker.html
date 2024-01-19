@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+    <!-- Meanmenu CSS -->
+    <link rel="stylesheet" href="/assets/css/meanmenu.css">
+    <!-- Boxicons CSS -->
+    <link rel="stylesheet" href="/assets/css/boxicons.min.css">
+    <!-- Flaticon CSS -->
+    <link rel="stylesheet" href="/assets/fonts/flaticon.css">
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet" href="/assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="/assets/css/owl.theme.default.min.css">
+    <!-- Odometer CSS-->
+    <link rel="stylesheet" href="/assets/css/odometer.min.css">
+    <!-- Magnific Popup CSS -->
+    <link rel="stylesheet" href="/assets/css/magnific-popup.min.css">
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <!-- Dark CSS -->
+    <link rel="stylesheet" href="/assets/css/dark.css">
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="/assets/css/responsive.css">
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .flip-card {
+            background-color: transparent;
+            width: 300px;
+            height: 300px;
+            perspective: 1000px;
+        }
+
+        .flip-card-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            transition: transform 0.6s;
+            transform-style: preserve-3d;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        }
+
+        .flip-card:hover .flip-card-inner {
+            transform: rotateY(180deg);
+        }
+
+        .flip-card-front,
+        .flip-card-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+        }
+
+        .flip-card-front {
+            background-color: #bbb;
+            color: black;
+        }
+
+        .flip-card-back {
+            background-color: #2980b9;
+            color: white;
+            transform: rotateY(180deg);
+        }
+    </style>
+
+    <title>SRQ Robotics - Experts in Software and Electronic Design</title>
+
+    <link rel="icon" type="image/png" href="/assets/img/favicon.png">
+</head>
+
+<body onload="setTheme('theme-dark')">
+    <!-- Pre Loader -->
+    <div class="loader">
+        <div class="d-table">
+            <div class="d-table-cell">
+                <div class="spinner"></div>
+            </div>
+        </div>
+    </div>
+    <!-- End Pre Loader -->
+
+    <!-- NavBar -->
+    <div id="NavBarContent">
+        <!-- Content will be loaded here -->
+    </div>
+    <!-- End NavBar -->
+
+    <!-- Page Title -->
+    <div class="page-title-area" style="height: 40px; padding: 120px;">
+        <div class="d-table">
+            <div class="d-table-cell">
+                <div class="container">
+                    <div class="title-item" style="margin: 30px;">
+                        <h2> Wearable Fitness Tracker </h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Page Title -->
+
+    <!-- Project Details -->
+    <div class="project-details-area pt-100 pb-70">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-9">
+                    <div class="project-details-item">
+                        <div class="project-details-img">
+                            <img src="/assets/img/project-details1.jpg" alt="Project">
+                            <p style="color: rgb(255, 255, 255);">The primary objective of this innovative project was
+                                the development of a state-of-
+                                the-art fitness tracker. This device not only showcases power efficiency but also
+                                excels in detecting intricate velocity curves and distances associated with specific
+                                movements, marking a milestone in wearable fitness technology.</p>
+
+
+                            <br>
+
+                            <h2>Core Components:</h2>
+                            <br>
+
+                            <ul>
+                                <li><i class='bx bx-check'></i><b>NRF52 Microcontroller:</b> </li>
+                                <p> Serves as the central unit, orchestrating computations and managing wireless
+                                    communications with finesse.</p>
+                                <li> <i class='bx bx-check'></i><b>Digital Pressure Sensor:</b></li>
+                                <p> Accurately gauges environmental pressure, providing critical data for altitude
+                                    variation measurements.</p>
+                                <li> <i class='bx bx-check'></i><b> 6 Degrees of Freedom (DoF) Inertial Measurement Unit
+                                        (IMU):</b></li>
+                                <p> Captures comprehensive data on the tracker's spatial orientation and movement,
+                                    ensuring precise activity tracking.</p>
+                                <li><i class='bx bx-check'></i><b> Battery Management IC:</b></li>
+                                <p> Guarantees optimal power management, a pivotal feature for the device's operational
+                                    longevity.</p>
+                            </ul>
+                            <br>
+
+                            <h2>Structural Design:</h2>
+                            <br>
+                            <ul>
+                                <li><i class='bx bx-check'></i><b>PCB Layout:</b> </li>
+                                <p> The device is engineered with a sophisticated 4-layer Printed Circuit Board (PCB).
+                                </p>
+                                <li><i class='bx bx-check'></i><b>Compact Form Factor:</b></li>
+                                <p> A strategic arrangement of components reduces the device's dimensions to an
+                                    impressive 15mm by 25mm, ensuring portability without compromising functionality.
+                                </p>
+
+
+                            </ul>
+                            <br>
+                            <h2>Data Processing and Connectivity:</h2>
+                            <br>
+                            <ul>
+                                <li><i class='bx bx-check'></i><b>Advanced Data Processing:</b></li>
+                                <p> The integration of sensor fusion algorithms and digital signal processing techniques
+                                    plays a critical role in mitigating sensor noise. This approach ensures the
+                                    computation of highly accurate relative altitudes and orientation angles.</p>
+                                <li><i class='bx bx-check'></i> <b>Efficient Communication:</b></li>
+                                <p>Processed data is adeptly relayed to a mobile application via Bluetooth Low Energy
+                                    (BLE), offering users real-time access to their fitness metrics.</p>
+                            </ul>
+                            <br>
+                            <h2>Algorithm Development and Optimization:</h2>
+                            <br>
+
+                            <ul>
+                                <li><i class='bx bx-check'></i> <b> Feature Extraction and Classification
+                                        Algorithms:</b> </li>
+                                <p> The tracker is equipped with sophisticated algorithms designed to identify specific
+                                    movement types during physical activities. This feature adds a layer of depth to
+                                    activity tracking, catering to diverse user needs. </p>
+                                <li><i class='bx bx-check'></i> <b>MATLAB Simulations:</b> </li>
+                                <p> Initial stages of mathematical modeling and algorithm development were conducted
+                                    using MATLAB simulations. This phase was crucial for establishing a strong
+                                    theoretical foundation for the device's functionality. </p>
+                                <li><i class='bx bx-check'></i> <b> C++ Implementation: </b></li>
+                                <p>Subsequent to the simulations, these algorithms were meticulously implemented in C++
+                                    and optimized to ensure their efficient</p>
+                            </ul>
+                            <br>
+
+                            <div class="row">
+                                <div class="col-sm-6 col-lg-6">
+                                    <ul>
+                                        <li>
+                                            <i class='bx bx-check-square'></i>
+                                            Industrial Technology
+                                        </li>
+                                        <li>
+                                            <i class='bx bx-check-square'></i>
+                                            Unique Technology
+                                        </li>
+                                        <li>
+                                            <i class='bx bx-check-square'></i>
+                                            Modern Technology
+                                        </li>
+                                        <li>
+                                            <i class='bx bx-check-square'></i>
+                                            Automation
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-sm-6 col-lg-6">
+                                    <ul>
+                                        <li>
+                                            <i class='bx bx-check-square'></i>
+                                            Construction & Demolition
+                                        </li>
+                                        <li>
+                                            <i class='bx bx-check-square'></i>
+                                            Manufacture
+                                        </li>
+                                        <li>
+                                            <i class='bx bx-check-square'></i>
+                                            OIl & Gas
+                                        </li>
+                                        <li>
+                                            <i class='bx bx-check-square'></i>
+                                            Improved Monitoring
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-details-content">
+                            <div class="row">
+                                <div class="col-sm-6 col-lg-6">
+                                    <img src="/assets/img/project-details2.jpg" alt="Project Details">
+                                </div>
+                                <div class="col-sm-6 col-lg-6">
+                                    <img src="/assets/img/project-details3.jpg" alt="Project Details">
+                                </div>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo
+                                viverra maecenas accumsan lacus vel facilisis.Lorem Ipsum is simply dummy text of the
+                                printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy
+                                text ever since the 1500s, when an unknown specimen book. It has survived not only
+                                centuries, but printer took a galley of type and scrambled it to make a type specimen
+                                book. It has survived not only centuries, but also the leap into electronic Lorem Ipsum
+                                is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                                industry's standard dummy text ever since the 1500s, when an unknown printer took a
+                                galley of type and scrambled it to make a type specimen book. It has survived not only
+                                five centuries, but also the leap into electronic.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo
+                                viverra maecenas accumsan lacus vel facilisis.Lorem Ipsum is simply dummy text of the
+                                printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy
+                                text ever since the 1500s, when an unknown printer took a galley of type and scrambled
+                                it to make a type specimen book. It has survived not only five centuries, but also the
+                                leap into electronic.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo
+                                viverra maecenas accumsan lacus vel facilisis.Lorem Ipsum is simply dummy text of the
+                                printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy
+                                text ever since the 1500s, when an unknown printer took a galley of type and scrambled
+                                it to make a type specimen book. It has survived not only five centuries, but also the
+                                leap into electronic.</p>
+                            <div class="video-wrap">
+                                <img src="/assets/img/project-details4.jpg" alt="Video">
+                                <a href="https://www.youtube.com/watch?v=QcBeDbs8n9k" class="popup-youtube">
+                                    <i class='bx bx-play'></i>
+                                </a>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo
+                                viverra maecenas accumsan lacus vel facilisis.Lorem Ipsum is simply dummy text of the
+                                printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy
+                                text ever since the 1500s, when an unknown printer took a galley of type and scrambled
+                                it to make a type specimen book. It has survived not only five centuries, but also the
+                                leap into electronic.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo
+                                viverra maecenas accumsan lacus vel facilisis.Lorem Ipsum is simply dummy text of the
+                                printing and typesetting industry. Lorem Ipsum has been the industry's standard </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="project-details-item">
+                        <div class="project-details-mec">
+                            <h3>Project</h3>
+                            <ul>
+                                <li>
+                                    <a href="fitness-tracker.html">
+                                        Wearable Fitness Tracker
+                                        <i class='bx bx-chevron-right'></i>
+                                    </a>
+                                </li>
+                                <li> <a href="horse-limb-tracker.html">
+                                        Horse Limb Movement Tracker
+                                        <i class='bx bx-chevron-right'></i>
+                                    </a>
+                                </li>
+                                <li> <a href="guitar-effects-processor.html">
+                                        Guitar Effects Pedal
+                                        <i class='bx bx-chevron-right'></i>
+                                    </a>
+                                </li>
+
+                                <li> <a href="rotational-rate-tracker.html">
+                                        Precise Rotational Rate Tracker
+                                        <i class='bx bx-chevron-right'></i>
+                                    </a>
+                                </li>
+                                <li> <a href="nano-drone.html">
+                                        Drone Flight Controller
+                                        <i class='bx bx-chevron-right'></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="machine-controller-circuit.html">
+                                        Hydraulic Machine Controller
+                                        <i class='bx bx-chevron-right'></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!--div class="project-details-form">
+                                <h3>Ask Here</h3>
+                                <form>
+                                    <div class="form-group">
+                                        <label>
+                                            <i class='bx bx-user'></i>
+                                        </label>
+                                        <input type="text" class="form-control" placeholder="Ente your name">
+                                    </div>
+                                    <div class="form-group">
+                                        <label>
+                                            <i class='bx bx-mail-send'></i>
+                                        </label>
+                                        <input type="text" class="form-control" placeholder="Ente your name">
+                                    </div>
+                                    <div class="form-group">
+                                        <label>
+                                            <i class='bx bx-notepad'></i>
+                                        </label>
+                                        <textarea id="your_message" rows="8" class="form-control" placeholder="Enter your message"></textarea>
+                                    </div>
+                                    <button type="submit" class="btn project-form-btn">Submit Message</button>
+                                </form>
+                            </div>
+                            <div class="project-details-click">
+                                <img src="/assets/img/project-details5.jpg" alt="Project Details">
+                                <a href="#">Click Here</a>
+                            </div!-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Project Details -->
+
+    <!-- Footer -->
+    <div id="footerContent">
+        <!-- Content will be loaded here -->
+    </div>
+    <!-- End Footer -->
+
+    <!-- Essential JS -->
+    <script src="/assets/js/jquery.min.js"></script>
+    <script src="/assets/js/bootstrap.bundle.min.js"></script>
+    <!-- Form Validator JS -->
+    <script src="/assets/js/form-validator.min.js"></script>
+    <!-- Contact JS -->
+    <script src="/assets/js/contact-form-script.js"></script>
+    <!-- Meanmenu JS -->
+    <script src="/assets/js/jquery.meanmenu.js"></script>
+    <!-- Owl Carousel -->
+    <script src="/assets/js/owl.carousel.min.js"></script>
+    <!-- Appear JS -->
+    <script src="/assets/js/jquery.appear.js"></script>
+    <!-- Odometer JS -->
+    <script src="/assets/js/odometer.min.js"></script>
+    <!-- Magnific Popup JS -->
+    <script src="/assets/js/jquery.magnific-popup.min.js"></script>
+    <!-- Custom JS -->
+    <script src="/assets/js/custom.js"></script>
+    <script>
+        // Use Fetch API to load content from the text file
+        fetch('/assets/common/topheader.html')
+            .then(response => response.text())
+            .then(content => {
+                // Insert the content into the HTML element
+                document.getElementById('TopHeaderContent').innerHTML = content;
+            })
+            .catch(error => console.error('Error loading content:', error));
+
+        // Use Fetch API to load content from the text file
+        fetch('/assets/common/NavBar.html')
+            .then(response => response.text())
+            .then(content => {
+                // Insert the content into the HTML element
+                document.getElementById('NavBarContent').innerHTML = content;
+            })
+            .catch(error => console.error('Error loading content:', error));
+
+        // Use Fetch API to load content from the text file
+        fetch('/assets/common/footer.html')
+            .then(response => response.text())
+            .then(content => {
+                // Insert the content into the HTML element
+                document.getElementById('footerContent').innerHTML = content;
+            })
+            .catch(error => console.error('Error loading content:', error));
+    </script>
+</body>
+
+</html>
