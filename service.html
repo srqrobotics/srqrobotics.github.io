@@ -219,6 +219,15 @@
                 document.getElementById('footerContent').innerHTML = content;
             })
             .catch(error => console.error('Error loading content:', error));
+
+        function toggleMobileNavDisplay() {
+            var mobileNav = document.getElementById("mobileNavList");
+            if (mobileNav.style.display === "none") {
+                mobileNav.style.display = "inline";
+            } else {
+                mobileNav.style.display = "none";
+            }
+        }
     </script>
 </body>
 

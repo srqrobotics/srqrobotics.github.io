@@ -241,7 +241,43 @@
     <!-- Custom JS -->
     <script src="assets/js/custom.js"></script>
     <!-- ContentLoader JS -->
-    <script src="assets/js/contentLoader.js"></script>
+    <script>
+        // Use Fetch API to load content from the text file
+        fetch('./assets/common/topheader.html')
+            .then(response => response.text())
+            .then(content => {
+                // Insert the content into the HTML element
+                document.getElementById('TopHeaderContent').innerHTML = content;
+            })
+            .catch(error => console.error('Error loading content:', error));
+
+        // Use Fetch API to load content from the text file
+        fetch('./assets/common/NavBar.html')
+            .then(response => response.text())
+            .then(content => {
+                // Insert the content into the HTML element
+                document.getElementById('NavBarContent').innerHTML = content;
+            })
+            .catch(error => console.error('Error loading content:', error));
+
+        // Use Fetch API to load content from the text file
+        fetch('./assets/common/footer.html')
+            .then(response => response.text())
+            .then(content => {
+                // Insert the content into the HTML element
+                document.getElementById('footerContent').innerHTML = content;
+            })
+            .catch(error => console.error('Error loading content:', error));
+
+        function toggleMobileNavDisplay() {
+            var mobileNav = document.getElementById("mobileNavList");
+            if (mobileNav.style.display === "none") {
+                mobileNav.style.display = "inline";
+            } else {
+                mobileNav.style.display = "none";
+            }
+        }
+    </script>
     
 </body>
 

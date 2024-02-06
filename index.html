@@ -79,6 +79,8 @@
         content="SRQ Robotics experts in Electronic & Software Design. Our mission is to provide unique solutions in software, IoT & smart electronics streams." />
 
     <link rel="icon" type="image/png" href="assets/img/favicon.png">
+
+
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-DF79P7GSTY">
     </script>
@@ -1040,6 +1042,15 @@
                 document.getElementById('footerContent').innerHTML = content;
             })
             .catch(error => console.error('Error loading content:', error));
+
+        function toggleMobileNavDisplay() {
+            var mobileNav = document.getElementById("mobileNavList");
+            if (mobileNav.style.display === "none") {
+                mobileNav.style.display = "inline";
+            } else {
+                mobileNav.style.display = "none";
+            }
+        }
     </script>
 </body>
 
