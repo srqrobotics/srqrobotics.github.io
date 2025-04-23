@@ -5,6 +5,7 @@ import { defineConfig } from "vite";
 import tsconfigPaths from "vite-tsconfig-paths";
 
 export default defineConfig({
+  base: "/srqrobotics.github.io/", // ← Set this to your GitHub repo name
   css: {
     postcss: {
       plugins: [tailwindcss, autoprefixer],
