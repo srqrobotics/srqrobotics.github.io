@@ -1,0 +1,46 @@
+{
+    "name": "DHT22 Temperature and Humidity Sensor",
+    "type": "Temperature and Humidity Sensor",
+    "digital-pins": {
+        "id": [
+            "5V",
+            "DATA",
+            "NC",
+            "GND"
+        ],
+        "reloc": [
+            {
+                "id": "5V",
+                "points": [
+                    17,
+                    128
+                ]
+            },
+            {
+                "id": "DATA",
+                "points": [
+                    28,
+                    128
+                ]
+            },
+            {
+                "id": "NC",
+                "points": [
+                    39,
+                    128
+                ]
+            },
+            {
+                "id": "GND",
+                "points": [
+                    50,
+                    128
+                ]
+            }
+        ]
+    },
+    "specs": {
+        "Sensor": "DHT12",
+        "voltage": "5V"
+    }
+}

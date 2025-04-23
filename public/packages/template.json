@@ -1,0 +1,55 @@
+{
+  "name": "Arduino Nano",
+  "type": "microcontroller",
+  "digital-pins": {
+    "id": [
+      "0",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+      "A0",
+      "A1",
+      "A2",
+      "A3",
+      "A4",
+      "A5"
+    ],
+    "reloc": [
+      {"id": "0", "points": [8, 17]},
+      {"id": "1", "points": [8, 17]},
+      {"id": "2", "points": [8, 17]},
+      {"id": "3", "points": [8, 17]},
+      {"id": "4", "points": [8, 17]},
+      {"id": "5", "points": [8, 17]},
+      {"id": "6", "points": [8, 17]},
+      {"id": "7", "points": [8, 17]},
+      {"id": "8", "points": [8, 17]},
+      {"id": "9", "points": [8, 17]},
+      {"id": "10", "points": [8, 17]},
+      {"id": "11", "points": [8, 17]},
+      {"id": "12", "points": [8, 17]},
+      {"id": "13", "points": [8, 17]},
+      {"id": "A0", "points": [8, 17]},
+      {"id": "A1", "points": [8, 17]},
+      {"id": "A2", "points": [8, 17]},
+      {"id": "A3", "points": [8, 17]},
+      {"id": "A4", "points": [8, 17]},
+      {"id": "A5", "points": [8, 17]}
+    ]
+  },
+  "specs": {
+    "processor": "ATmega328P",
+    "clockSpeed": "16 MHz",
+    "voltage": "5V"
+  }
+}

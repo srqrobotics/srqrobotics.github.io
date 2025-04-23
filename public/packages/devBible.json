@@ -1,0 +1,79 @@
+{
+	"components": [
+		{
+			"id": "ArduinoUNO",
+			"name": "ArduinoUNO",
+			"x": 1159,
+			"y": 276,
+			"rotation": 0,
+			"image": {
+				"src": "/packages/Microcontrollers/Arduino/ArduinoUNO.png",
+				"width": 0,
+				"height": 0
+			},
+			"pin-map": {
+				"src": "/packages/Microcontrollers/Arduino/ArduinoUNO.json"
+			}
+		},
+		{
+			"id": "ArduinoMega",
+			"name": "ArduinoMega",
+			"x": 1159,
+			"y": 276,
+			"rotation": 0,
+			"image": {
+				"src": "/packages/Microcontrollers/Arduino/ArduinoMega.png",
+				"width": 0,
+				"height": 0
+			},
+			"pin-map": {
+				"src": "/packages/Microcontrollers/Arduino/ArduinoMega.json"
+			}
+		},
+		{
+			"id": "ArduinoNano",
+			"name": "ArduinoNano",
+			"x": 1159,
+			"y": 276,
+			"rotation": 0,
+			"image": {
+				"src": "/packages/Microcontrollers/Arduino/ArduinoNano.png",
+				"width": 0,
+				"height": 0
+			},
+			"pin-map": {
+				"src": "/packages/Microcontrollers/Arduino/ArduinoNano.json"
+			}
+		},
+		{
+			"id": "ESP32Wroom",
+			"name": "ESP32Wroom",
+			"x": 1159,
+			"y": 276,
+			"rotation": 0,
+			"image": {
+				"src": "/packages/Microcontrollers/Espressif/ESP32Wroom.png",
+				"width": 0,
+				"height": 0
+			},
+			"pin-map": {
+				"src": "/packages/Microcontrollers/Espressif/ESP32Wroom.json"
+			}
+		},
+		{
+			"id": "NodeMCU",
+			"name": "NodeMCU",
+			"x": 1159,
+			"y": 276,
+			"rotation": 0,
+			"image": {
+				"src": "/packages/Microcontrollers/Espressif/NodeMCU.png",
+				"width": 0,
+				"height": 0
+			},
+			"pin-map": {
+				"src": "/packages/Microcontrollers/Espressif/NodeMCU.json"
+			}
+		}
+	]
+}

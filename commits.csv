@@ -1,0 +1,66 @@
+84c79a5,Pasindu Vihangana,Fri, 7 Mar 2025 14:05:56 +0530,text editor fixed
+c3ffe25,Pasindu Vihangana,Thu, 6 Mar 2025 13:02:48 +0530,UX improvements
+e5d22af,Pasindu Vihangana,Wed, 5 Mar 2025 19:25:15 +0530,second prompt handle added
+aa7d25f,Pasindu Vihangana,Wed, 5 Mar 2025 19:24:47 +0530,removed
+6b688b3,Pasindu Vihangana,Wed, 5 Mar 2025 18:47:56 +0530,Update ComponentLibrary.tsx
+d88c51c,Pasindu Vihangana,Wed, 5 Mar 2025 17:13:11 +0530,Update .gitignore
+f42ba76,Pasindu Vihangana,Wed, 5 Mar 2025 17:11:53 +0530,application prompt added
+c94d265,Pasindu Vihangana,Wed, 5 Mar 2025 15:32:16 +0530,made files collapsible
+ab33da8,Pasindu Vihangana,Wed, 5 Mar 2025 13:40:17 +0530,Update ComponentLibrary.tsx
+2054faa,Pasindu Vihangana,Tue, 4 Mar 2025 12:54:36 +0530,Update ComponentLibrary.tsx
+29e5d96,Pasindu Vihangana,Tue, 4 Mar 2025 12:54:05 +0530,Update demo.editor.json
+a289ccd,Pasindu Vihangana,Wed, 26 Feb 2025 19:20:41 +0530,bug fix
+5f361a7,Pasindu Vihangana,Wed, 26 Feb 2025 16:23:26 +0530,Update componentLoader.ts
+88b1533,Pasindu Vihangana,Wed, 26 Feb 2025 15:36:49 +0530,input JSON simplified
+0dd0c0d,Pasindu Vihangana,Fri, 21 Feb 2025 18:03:44 +0530,demo updated
+3054804,Pasindu Vihangana,Fri, 21 Feb 2025 17:53:49 +0530,Update demo.old.json
+92071fe,Pasindu Vihangana,Fri, 21 Feb 2025 13:25:47 +0530,refactored for simplification
+9d974fa,Pasindu Vihangana,Thu, 20 Feb 2025 14:31:45 +0530,JSON file update
+cb19ffb,Pasindu Vihangana,Wed, 19 Feb 2025 23:14:51 +0530,Update demo.json
+a408563,Pasindu Vihangana,Wed, 19 Feb 2025 23:14:36 +0530,minor changes
+cf3bac0,Pasindu Vihangana,Wed, 19 Feb 2025 17:27:00 +0530,Routing Errors Fixed
+d210841,Pasindu Vihangana,Wed, 19 Feb 2025 16:43:55 +0530,pin names added
+f58bba8,Pasindu Vihangana,Wed, 19 Feb 2025 16:02:50 +0530,removed the grid
+733dc87,Pasindu Vihangana,Wed, 19 Feb 2025 15:43:39 +0530,Update Canvas.tsx
+b89ced9,Pasindu Vihangana,Wed, 19 Feb 2025 15:28:23 +0530,component placement & wire routing fixed
+b7cfbd0,Pasindu Vihangana,Wed, 19 Feb 2025 15:16:55 +0530,auto-routing on position change
+5ef3a39,Pasindu Vihangana,Wed, 19 Feb 2025 13:52:55 +0530,move and routing features added
+3a7ffc1,Pasindu Vihangana,Wed, 19 Feb 2025 13:52:29 +0530,Update arduino-mega.json
+261aa5b,Pasindu Vihangana,Tue, 18 Feb 2025 13:56:38 +0530,dev boards added
+7f27396,Pasindu Vihangana,Tue, 18 Feb 2025 13:50:29 +0530,Update componentLoader.ts
+58c120d,Pasindu Vihangana,Tue, 18 Feb 2025 13:50:22 +0530,Update Canvas.tsx
+e3523c8,Pasindu Vihangana,Tue, 18 Feb 2025 13:50:13 +0530,Update home.tsx
+f4f3cfc,Pasindu Vihangana,Mon, 17 Feb 2025 12:20:46 +0530,routing updated
+b2042db,Pasindu Vihangana,Mon, 17 Feb 2025 12:20:06 +0530,demo file updated
+640dd0b,Pasindu Vihangana,Mon, 17 Feb 2025 12:19:52 +0530,Delete leonardo.png
+3967006,Pasindu Vihangana,Mon, 17 Feb 2025 12:17:51 +0530,module update
+a17ceb6,Pasindu Vihangana,Thu, 13 Feb 2025 15:24:40 +0530,power line routing simplified
+ac64a2f,Pasindu Vihangana,Sat, 1 Feb 2025 07:40:38 +0530,overlapping path shift added
+0a002e4,Pasindu Vihangana,Sat, 1 Feb 2025 07:40:19 +0530,Update demo.json
+cfdddd0,Pasindu Vihangana,Fri, 31 Jan 2025 13:40:45 +0530,complete nice path added
+5537359,Pasindu Vihangana,Fri, 31 Jan 2025 13:33:50 +0530,basic neat path wiring
+5f1b6c3,Pasindu Vihangana,Wed, 29 Jan 2025 18:46:54 +0530,Update componentLoader.ts
+6bf3514,Pasindu Vihangana,Wed, 29 Jan 2025 18:20:22 +0530,getShortPathDir added
+09a0688,Pasindu Vihangana,Wed, 29 Jan 2025 11:44:12 +0530,Update componentLoader.ts
+0ea8349,Pasindu Vihangana,Tue, 28 Jan 2025 14:24:27 +0530,auto wire color changing added
+a836e0a,Pasindu Vihangana,Tue, 28 Jan 2025 14:23:16 +0530,refactored
+4d7d51d,Pasindu Vihangana,Mon, 20 Jan 2025 15:30:36 +0530,auto routing added
+998341c,Pasindu Vihangana,Mon, 20 Jan 2025 15:30:21 +0530,Update demo.json
+f85cb07,Pasindu Vihangana,Mon, 20 Jan 2025 15:30:16 +0530,Update arduino-uno.json
+893be95,Pasindu Vihangana,Mon, 20 Jan 2025 09:54:36 +0530,Update componentLoader.ts
+86a7f31,Pasindu Vihangana,Mon, 20 Jan 2025 09:51:33 +0530,Update RightSidebar.tsx
+865f502,Pasindu Vihangana,Mon, 20 Jan 2025 09:51:28 +0530,Update Canvas.tsx
+366a0ad,Pasindu Vihangana,Thu, 16 Jan 2025 12:21:45 +0530,hover notation added
+264cc2c,Pasindu Vihangana,Thu, 16 Jan 2025 11:03:07 +0530,example .json files
+c1afa29,Pasindu Vihangana,Thu, 16 Jan 2025 11:02:40 +0530,pin mapping added
+b6fb881,Pasindu Vihangana,Wed, 15 Jan 2025 09:43:11 +0530,refactored
+fa6bd1a,Pasindu Vihangana,Thu, 9 Jan 2025 15:53:53 +0530,Update Canvas.tsx
+6f32c84,Pasindu Vihangana,Thu, 9 Jan 2025 15:52:46 +0530,off loaded to .json
+8f41b00,Pasindu Vihangana,Thu, 9 Jan 2025 15:29:42 +0530,hard coded example added
+e10af93,Pasindu Vihangana,Thu, 9 Jan 2025 15:29:16 +0530,minor changes
+b3ca9c0,Pasindu Vihangana,Thu, 9 Jan 2025 10:50:31 +0530,everything needed implemented
+bc45088,Pasindu Vihangana,Thu, 9 Jan 2025 10:50:08 +0530,added packages to public
+8695548,Pasindu Vihangana,Thu, 9 Jan 2025 09:29:59 +0530,ref
+f07c560,Pasindu Vihangana,Thu, 2 Jan 2025 18:13:04 +0530,images added
+0d34ed1,Pasindu Vihangana,Thu, 2 Jan 2025 16:18:01 +0530,Basic Layout Cnfigured
+02484df,Pasindu Vihangana,Thu, 2 Jan 2025 14:20:31 +0530,Initial commit from create-react-router

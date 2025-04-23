@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  @apply bg-white dark:bg-gray-950 text-gray-900 dark:text-gray-100;
+
+  @media (prefers-color-scheme: dark) {
+    color-scheme: dark;
+  }
+}
+
+a {
+  @apply text-blue-700 dark:text-blue-400 hover:underline;
+}
+
+button {
+  @apply text-gray-900 dark:text-gray-100;
+}
+
+input {
+  @apply text-gray-900 dark:text-gray-100 bg-gray-100 dark:bg-gray-800;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  @apply text-gray-900 dark:text-gray-100;
+}
+
+p {
+  @apply text-gray-700 dark:text-gray-300;
+}
+
+pre, code {
+  @apply text-gray-900 dark:text-gray-100 bg-gray-100 dark:bg-gray-800;
+}

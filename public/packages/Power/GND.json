@@ -1,0 +1,18 @@
+{
+  "name": "GND",
+  "type": "symbol",
+  "digital-pins": {
+    "id": [
+      "GND"
+    ],
+    "reloc": [
+      {
+        "id": "GND",
+        "points": [
+          23,
+          7
+        ]
+      }
+    ]
+  }
+}

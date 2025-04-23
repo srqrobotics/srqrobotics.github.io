@@ -1,0 +1,37 @@
+{
+    "name": "SG90 Servo",
+    "type": "Servo",
+    "digital-pins": {
+        "id": [
+            "GND",
+            "5V",
+            "POS"
+        ],
+        "reloc": [
+            {
+                "id": "GND",
+                "points": [
+                    9,
+                    93
+                ]
+            },
+            {
+                "id": "5V",
+                "points": [
+                    9,
+                    80
+                ]
+            },
+            {
+                "id": "POS",
+                "points": [
+                    9,
+                    67
+                ]
+            }
+        ]
+    },
+    "specs": {
+        "voltage": "5V"
+    }
+}

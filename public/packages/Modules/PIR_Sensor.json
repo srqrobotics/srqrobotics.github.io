@@ -1,0 +1,38 @@
+{
+    "name": "PIR Motion Sensor",
+    "type": "Motion Sensor",
+    "digital-pins": {
+        "id": [
+            "5V",
+            "DATA",
+            "GND"
+        ],
+        "reloc": [
+            {
+                "id": "5V",
+                "points": [
+                    79,
+                    196
+                ]
+            },
+            {
+                "id": "DATA",
+                "points": [
+                    100,
+                    196
+                ]
+            },
+            {
+                "id": "GND",
+                "points": [
+                    121,
+                    196
+                ]
+            }
+        ]
+    },
+    "specs": {
+        "Sensor": "HC-SR501",
+        "voltage": "5V"
+    }
+}

@@ -1,0 +1,19 @@
+{
+  "components": [
+    {
+      "id": "arduino-nano",
+      "name": "Arduino Nano",
+      "x": 0,
+      "y": 0,
+      "rotation": 0,
+      "image": {
+        "src": "/packages/Modules/servo-SG90.png",
+        "width": 0,
+        "height": 0
+      },
+      "pin-map": {
+        "src": "/packages/Modules/servo-SG90.json"
+      }
+    }
+  ]
+} 

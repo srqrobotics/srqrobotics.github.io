@@ -1,0 +1,41 @@
+{
+  "components": [
+    "ArduinoMega",
+    "I2C_LCD",
+    "ultrasonic_SR04"
+  ],
+  "wire": [
+    {
+      "ArduinoMega": "5V",
+      "I2C_LCD": "5V"
+    },
+    {
+      "ArduinoMega": "GND-1",
+      "I2C_LCD": "GND"
+    },
+    {
+      "ArduinoMega": "D20",
+      "I2C_LCD": "SDA"
+    },
+    {
+      "ArduinoMega": "D21",
+      "I2C_LCD": "SCL"
+    },
+    {
+      "ArduinoMega": "5V",
+      "ultrasonic_SR04": "5V"
+    },
+    {
+      "ArduinoMega": "GND-2",
+      "ultrasonic_SR04": "GND"
+    },
+    {
+      "ArduinoMega": "D2",
+      "ultrasonic_SR04": "TRIG"
+    },
+    {
+      "ArduinoMega": "D3",
+      "ultrasonic_SR04": "ECHO"
+    }
+  ]
+}

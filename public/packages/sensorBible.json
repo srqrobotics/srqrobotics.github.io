@@ -1,0 +1,94 @@
+{
+    "components": [
+        {
+            "id": "DHT22",
+            "name": "DHT22",
+            "x": 1763,
+            "y": 408,
+            "rotation": 0,
+            "image": {
+                "src": "/packages/Modules/DHT22.png",
+                "width": 0,
+                "height": 0
+            },
+            "pin-map": {
+                "src": "/packages/Modules/DHT22.json"
+            }
+        },
+        {
+            "id": "I2C_LCD",
+            "name": "I2C_LCD",
+            "x": 2519,
+            "y": 915,
+            "rotation": 0,
+            "image": {
+                "src": "/packages/Modules/I2C_LCD.png",
+                "width": 0,
+                "height": 0
+            },
+            "pin-map": {
+                "src": "/packages/Modules/I2C_LCD.json"
+            }
+        },
+        {
+            "id": "LDR_Sensor",
+            "name": "LDR_Sensor",
+            "x": 845,
+            "y": 392,
+            "rotation": 0,
+            "image": {
+                "src": "/packages/Modules/LDR_Sensor.png",
+                "width": 0,
+                "height": 0
+            },
+            "pin-map": {
+                "src": "/packages/Modules/LDR_Sensor.json"
+            }
+        },
+        {
+            "id": "PIR_Sensor",
+            "name": "PIR_Sensor",
+            "x": 440,
+            "y": 405,
+            "rotation": 0,
+            "image": {
+                "src": "/packages/Modules/PIR_Sensor.png",
+                "width": 0,
+                "height": 0
+            },
+            "pin-map": {
+                "src": "/packages/Modules/PIR_Sensor.json"
+            }
+        },
+        {
+            "id": "servo_SG90",
+            "name": "servo_SG90",
+            "x": 2246,
+            "y": 1276,
+            "rotation": 0,
+            "image": {
+                "src": "/packages/Modules/servo_SG90.png",
+                "width": 0,
+                "height": 0
+            },
+            "pin-map": {
+                "src": "/packages/Modules/servo_SG90.json"
+            }
+        },
+        {
+            "id": "ultrasonic_SR04",
+            "name": "ultrasonic_SR04",
+            "x": 1940,
+            "y": 614,
+            "rotation": 0,
+            "image": {
+                "src": "/packages/Modules/ultrasonic_SR04.png",
+                "width": 0,
+                "height": 0
+            },
+            "pin-map": {
+                "src": "/packages/Modules/ultrasonic_SR04.json"
+            }
+        }
+    ]
+}

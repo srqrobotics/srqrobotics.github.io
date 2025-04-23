@@ -1,0 +1,47 @@
+[
+  {
+    "id": "ArduinoMega",
+    "name": "ArduinoMega",
+    "x": 1159,
+    "y": 276,
+    "rotation": 0,
+    "image": {
+      "src": "/packages/Microcontrollers/Arduino/ArduinoMega.png",
+      "width": 0,
+      "height": 0
+    },
+    "pin-map": {
+      "src": "/packages/Microcontrollers/Arduino/ArduinoMega.json"
+    }
+  },
+  {
+    "id": "I2C_LCD",
+    "name": "I2C_LCD",
+    "x": 2519,
+    "y": 915,
+    "rotation": 0,
+    "image": {
+      "src": "/packages/Modules/I2C_LCD.png",
+      "width": 0,
+      "height": 0
+    },
+    "pin-map": {
+      "src": "/packages/Modules/I2C_LCD.json"
+    }
+  },
+  {
+    "id": "ultrasonic_SR04",
+    "name": "ultrasonic_SR04",
+    "x": 1940,
+    "y": 614,
+    "rotation": 0,
+    "image": {
+      "src": "/packages/Modules/ultrasonic_SR04.png",
+      "width": 0,
+      "height": 0
+    },
+    "pin-map": {
+      "src": "/packages/Modules/ultrasonic_SR04.json"
+    }
+  }
+]

@@ -1,0 +1,46 @@
+{
+    "name": "LDR Light Sensor Module",
+    "type": "Light Sensor Module",
+    "digital-pins": {
+        "id": [
+            "A0",
+            "D0",
+            "GND",
+            "5V"
+        ],
+        "reloc": [
+            {
+                "id": "A0",
+                "points": [
+                    25,
+                    244
+                ]
+            },
+            {
+                "id": "D0",
+                "points": [
+                    38,
+                    244
+                ]
+            },
+            {
+                "id": "GND",
+                "points": [
+                    53,
+                    244
+                ]
+            },
+            {
+                "id": "5V",
+                "points": [
+                    66,
+                    244
+                ]
+            }
+        ]
+    },
+    "specs": {
+        "Communication": "Digital,Analog",
+        "voltage": "5V"
+    }
+}
